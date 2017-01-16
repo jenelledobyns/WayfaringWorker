@@ -1,12 +1,19 @@
 $(document).ready(function(){
- 
+
 /**
  * This object controls the nav bar. Implement the add and remove
  * action over the elements of the nav bar that we want to change.
  *
  * @type {{flagAdd: boolean, elements: string[], add: Function, remove: Function}}
  */
+ var selector = '.nav li';
+
+$(selector).on('click', function(){
+   $(selector).removeClass('active');
+   $(this).addClass('active');
+});
 var myNavBar = {
+
 
     flagAdd: true,
 

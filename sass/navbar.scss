@@ -9,6 +9,7 @@
 html,
 body {
     overflow-x: hidden; /* Prevent scroll on narrow devices */
+
 }
 body {
     padding-top: 100px;
@@ -28,6 +29,26 @@ footer {
 
 .navbar-nav > li > a {
   color: white;
+    &:hover {
+      color: white;
+      font-weight:bold;
+      background-color: black;
+    &:focus {
+      background-color: black;
+    }
+    }
+}
+ul.nav a {
+
+  &:hover {
+  background-color: rgba(0,0,0,0) !important;
+}
+}
+.navbar-fixed-top .navbar-nav>.active> a,
+.navbar-fixed-top .navbar-nav>.active>a:focus,
+.navbar-fixed-top .navbar-nav>.active>a:hover {
+  background: rgba(0,0,0,0) !important;
+  font-weight: bold;
 }
 
 .navbar-container {
