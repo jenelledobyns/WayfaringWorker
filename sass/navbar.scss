@@ -20,8 +20,14 @@ footer {
 /*
  * Custom styles
  */
+
 .navbar-brand {
     font-size: 24px;
+    color: #fff;
+}
+
+.navbar-nav > li > a {
+  color: white;
 }
 
 .navbar-container {
@@ -29,8 +35,8 @@ footer {
 }
 
 .navbar.navbar-fixed-top.fixed-theme {
-    background-color: #222;
-    border-color: #080808;
+    background-color: #4c4c4c;
+    border-color: #4c4c4c;
     box-shadow: 0 0 5px rgba(0,0,0,.8);
 }
 
