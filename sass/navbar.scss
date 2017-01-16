@@ -22,38 +22,46 @@ footer {
  * Custom styles
  */
 
+.navbar-custom {
+  font-family: 'Couture', sans-serif !important;
+  font-size: 11pt;
+  letter-spacing: 1px;
+}
+
 .navbar-brand {
     font-size: 24px;
     color: #fff;
 }
 
 .navbar-nav > li > a {
-  color: white;
+  color: rgba(255,255,255,0.7);
     &:hover {
       color: white;
       font-weight:bold;
-      background-color: black;
-    &:focus {
-      background-color: black;
+
     }
-    }
+}
+.navbar-nav > li {
+  padding: 0px 10px 0px 10px;
 }
 ul.nav a {
 
   &:hover {
-  background-color: rgba(0,0,0,0) !important;
+  background-color: rgba(0,0,0,0);
 }
 }
 .navbar-fixed-top .navbar-nav>.active> a,
 .navbar-fixed-top .navbar-nav>.active>a:focus,
 .navbar-fixed-top .navbar-nav>.active>a:hover {
   background: rgba(0,0,0,0) !important;
-  font-weight: bold;
+  color: rgba(255,255,255,1);
 }
 
 .navbar-container {
-    padding: 20px 0 20px 0;
+    padding: 20px 20px 20px 0;
 }
+
+
 
 .navbar.navbar-fixed-top.fixed-theme {
     background-color: #4c4c4c;
@@ -66,7 +74,7 @@ ul.nav a {
 }
 
 .navbar-container.fixed-theme {
-    padding: 0;
+    padding: 0 20px 0 0;
 }
 
 .navbar-brand.fixed-theme,
