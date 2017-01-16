@@ -1,3 +1,94 @@
 ---
 ---
 @import "bootstrap";
+// Fonts
+  $body-font: 'Martel', serif;
+  $title-font: 'Roboto', sans-serif;
+  $title2-font: 'Couture', sans-serif;
+
+// Colors
+  $body-color: #959595;
+  $black: #4c4c4c;
+  $button2-color: #8d8d8d;
+  $form-color: #dcdcdc;
+
+
+.header {
+background: url('../../pics/1.jpg') no-repeat center bottom;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+height: 600px;
+box-shadow: 0px 0px 60px #6d6d6d;
+}
+
+.start-here {
+  font-family: $body-font;
+  font-size: 20px;
+  line-height: 15pt;
+  color: $body-color;
+  width: 800px;
+  padding: 50px;
+  margin: auto;
+  text-align: center;
+}
+.start-here p {
+  font-style: italic;
+}
+
+.btn {
+  background-color: $black;
+  color: #fff;
+  font-family: $title2-font;
+  font-size: 14px;
+  border: none;
+  height: 35px;
+  padding: 10px;
+}
+
+/* input[type="text"] {
+    width: 350px;
+    height: 35px;
+    padding-right: 100px;
+    //border-radius: 5px;
+    border: 0;
+    background-color: #dcdcdc;
+}
+
+input[type="submit"] {
+    margin-left: -100px;
+    height: 35px;
+    width: 100px;
+    border: 0;
+    -webkit-appearance: none;
+    background-color: #8d8d8d;
+    //border-radius: 0px 5px 5px 0px;
+    font-family: 'Couture', sans-serif;
+    font-size: 14px;
+    color: #fff;
+} */
+
+input[type="text"] {
+    width: 350px;
+    height: 35px;
+    padding-right: 100px;
+    background: $form-color;
+    border: 0;
+    border-radius: 5px 0px 0px 5px;
+    overflow: auto;
+
+}
+
+button[type="submit"] {
+    margin-left: -100px;
+    margin-top: -5px;
+    height: 35px;
+    width: 100px;
+    background: $button2-color;
+    color: white;
+    border: 0;
+    border-radius: 0px 5px 5px 0px;
+    font-family: $title2-font;
+    vertical-align: center;
+    text-align: center;
+    //-webkit-appearance: none;
+}
