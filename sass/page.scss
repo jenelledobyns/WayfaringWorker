@@ -13,18 +13,19 @@
   $form-color: #dcdcdc;
 
 
+
 .header {
 background: url('../../pics/1.jpg') no-repeat center bottom;
 -webkit-background-size: cover;
 -moz-background-size: cover;
-height: 600px;
+height: 550px;
 box-shadow: 0px 0px 60px #6d6d6d;
 margin-top: -100px;
 }
 
 .start-here {
   font-family: $body-font;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 15pt;
   color: $body-color;
   width: 800px;
@@ -34,6 +35,13 @@ margin-top: -100px;
 }
 .start-here p {
   font-style: italic;
+}
+
+h1 {
+  font-family: $title2-font !important;
+  font-size: 30pt;
+  color: $black !important;
+  text-align: center;
 }
 
 .btn {
@@ -83,4 +91,43 @@ button[type="submit"] {
     vertical-align: center;
     text-align: center;
     //-webkit-appearance: none;
+}
+
+@import url("slider.css");
+
+
+// Work Section
+
+// Blog Post Section
+.blog {
+  text-align: center;
+  margin: auto;
+  width: 70%;
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: $black !important;
+  line-height: -20px;
+  font-size: 44px;
+  text-transform: uppercase;
+}
+.subtitle {
+  margin-top: -15px;
+
+  h3 {
+  font-family: 'Myriad Pro', sans-serif;
+  font-size: 22px;
+  color: #636363;
+
+}
+}
+img {
+   width: 100%;
+}
+p {
+  font-family: 'Myriad Pro', sans-serif;
+  color: #262626;
+  font-size: 20px;
+}
+
 }
