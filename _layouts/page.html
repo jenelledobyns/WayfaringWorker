@@ -1,17 +1,43 @@
 ---
 ---
 <!DOCTYPE HTML>
+
+
 <head>
-    <link href='../fonts/Roboto-Thin.ttf' rel='stylesheet' type='text/css'>
-    <link href='../fonts/couture-bld.ttf' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Martel" rel="stylesheet">
-    <link rel="stylesheet" href="sass/page.css">
+  <!-- css -->
+<link rel="stylesheet" href="/../sass/page.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/_site/sass/navbar.css">
+<!-- javascript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="wayfaring_worker/javascript/navbar.js"></script>
+<!-- fonts -->
+<link href='wayfaring_worker/fonts/couture-bld.ttf' rel='stylesheet' type='text/css'>
+<link href='wayfaring_worker/fonts/Roboto-Thin.ttf' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Martel" rel="stylesheet">
 </head>
 <html lang="en-US">
 
-{% include navbar.html %}
+<!-- NAVBAR -->
+        <nav id="header" class="navbar navbar-fixed-top navbar-custom">
+            <div id="header-container" class="container navbar-container">
+                <div class="navbar-header">
+
+                    <a id="brand" class="navbar-brand" href="wayfaring_worker/">WW</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="wayfaring_worker/work/">Work</a></li>
+                        <li><a href="wayfaring_worker/wander/">Wander</a></li>
+                        <li><a href="wayfaring_worker/about.html">About</a></li>
+                        <li><a href="wayfaring_worker/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
 {{ content }}
 
 
-{% include footer.html %}
+<br>
+<br>
+<p> footey foot foot footer, here to foot</p>
