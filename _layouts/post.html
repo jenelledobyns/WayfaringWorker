@@ -3,10 +3,27 @@
 <!DOCTYPE HTML>
 
 
-
-
-<link rel="stylesheet" href="wayfaring_worker/css/post.css">
+<head>
+  <!-- css -->
+<link rel="stylesheet" href="{{ site.baseurl }}/sass/wander.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/sass/navbar.css">
+<!-- javascript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/javascript/navbar.js"></script>
+<!-- fonts -->
+<link href='{{ site.baseurl }}/fonts/couture-bld.ttf' rel='stylesheet' type='text/css'>
+<link href='{{ site.baseurl }}/fonts/Roboto-Thin.ttf' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Martel" rel="stylesheet">
+</head>
 <html lang="en-US">
-<p> layout - post </p>
-<p> test test test! </p>
+
+{% include navbar.html %}
+
+<h2 class="post-title">{{ post.title }}</h2>
+<h3> {{ post.author }} // {{ post.date | date: '%B %d, %Y' }} </h3>
+
+
 {{ content }}
+
+{% include related.html %}
+{% include footer.html %}
