@@ -2,7 +2,6 @@
 ---
 <!DOCTYPE HTML>
 
-
 <head>
   <!-- css -->
 <link rel="stylesheet" href="{{ site.baseurl }}/sass/wander.css">
@@ -17,13 +16,17 @@
 </head>
 <html lang="en-US">
 
+<body>
+
 {% include navbar.html %}
 
-<h2 class="post-title">{{ post.title }}</h2>
-<h3> {{ post.author }} // {{ post.date | date: '%B %d, %Y' }} </h3>
+<img src= "{{ site.baseurl }}/{{ page.image}}" class="cover-image" alt="cover">
+<h2 class="post-title">{{ page.title }}</h2>
+<h3> {{ page.author }} // {{ page.date | date: '%B %d, %Y' }} </h3>
 
 
 {{ content }}
 
 {% include related.html %}
 {% include footer.html %}
+</body>

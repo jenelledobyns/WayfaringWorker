@@ -15,8 +15,11 @@
 
 // attempting to standardize image size...
 .container2 {
-  width: 800px;
+  width: 100%;
   height: 500px;
+  margin: 0;
+  overflow: hidden;
+
 }
 .container2 img {
   width: 100%;
