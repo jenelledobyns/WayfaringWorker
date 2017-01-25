@@ -13,7 +13,34 @@
   $button2-color: #8d8d8d;
   $form-color: #dcdcdc;
 
-// attempting to standardize image size...
+.cover-image {
+  margin-top: -100px;
+  height: 550px;
+  overflow: hidden;
+  }
+
+
+
+.post-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: $black !important;
+  line-height: -20px;
+  font-size: 44px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
 .container2 {
   width: 100%;
   height: 500px;
@@ -90,11 +117,18 @@ h2 > a {
   margin-top: -15px;
 }
 
-  h3 {
+.blog-content-outer {
+  width: 70%;
+}
+.blog-content-inner {
+  margin: 0 auto;
+  width: 69%;
+}
+.subity {
   font-family: 'Myriad Pro', sans-serif;
   font-size: 22px;
   color: #636363;
-
+  text-align: center;
 }
 
 img {
