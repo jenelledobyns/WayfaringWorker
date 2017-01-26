@@ -32,12 +32,29 @@
 }
 
 
+.hello-world {
+  color: purple;
+}
 
 
 
+//  IN BLOG POST IMAGES FORMATTING
+.blog-image-1 {
+width: 90%;
+margin: auto;
+}
 
+.blog-image-2 {
 
+}
+.blog-image-3 {
 
+}
+
+.blog-content {
+  width: 70%;
+  margin: 0 auto;
+}
 
 
 
@@ -117,13 +134,7 @@ h2 > a {
   margin-top: -15px;
 }
 
-.blog-content-outer {
-  width: 70%;
-}
-.blog-content-inner {
-  margin: 0 auto;
-  width: 69%;
-}
+
 .subity {
   font-family: 'Myriad Pro', sans-serif;
   font-size: 22px;
