@@ -1,3 +1,41 @@
 ---
 ---
 @import "bootstrap";
+// Fonts
+  $body-font: 'Martel', serif;
+  $title-font: 'Roboto', sans-serif;
+  $title2-font: 'Couture', sans-serif;
+
+// Colors
+  $body-color: #959595;
+  $black: #4c4c4c;
+  $button2-color: #8d8d8d;
+  $form-color: #dcdcdc;
+
+.header {
+background: url('{{ site.baseurl }}/pics/3.jpg') no-repeat center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+height: 300px;
+box-shadow: 0px 0px 60px #6d6d6d;
+margin-top: -100px;
+}
+
+.col-sm-8 {
+  height: 500px;
+  padding: 20px;
+  text-align: center;
+
+}
+
+.col-sm-4 {
+  height: 500px;
+  display: block;
+}
+
+h1 {
+  font-family: $title2-font !important;
+  font-size: 30pt;
+  color: $black !important;
+  text-align: center;
+}

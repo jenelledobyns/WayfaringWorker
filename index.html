@@ -2,16 +2,23 @@
 ---
 <head>
   <!-- CSS -->
-    <link rel="stylesheet" href="sass/page.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/sass/page.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/slick/slick-theme.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/slick/slick.css">
+
   <!-- FONTS -->
-    <link href='../fonts/Roboto-Thin.ttf' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Martel" rel="stylesheet">
+<<<<<<< HEAD
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
     <link href='../fonts/couture-bld.ttf' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Martel" rel="stylesheet">
+=======
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">  <link href='../fonts/couture-bld.ttf' rel='stylesheet' type='text/css'>
 
     <link href="https://fonts.googleapis.com/css?family=Martel" rel="stylesheet">
     <link rel="stylesheet" href="/slick/slick-theme.css">
     <link rel="stylesheet" href="/slick/slick.css">
+>>>>>>> f831af90fbe0fecb3fe422fd3a3f6f96138bc8ee
 
   <!-- JAVASCRIPT -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
@@ -42,9 +49,13 @@ h2{
 </head>
 
 <body>
+
+<!-- HEADER & NAVBAR -->
 <div class="header">
   {% include navbar.html %}
 </div>
+
+<!-- START HERE -->
 <div class="start-here">
 <p>Wayfaring Worker is dedicated today to bringing you the latest quality resources on travel, jobs abroad and activities that can help you get out of your comfort zone and lead the life of adventure you’ve always dreamed of.</p>
 
@@ -54,7 +65,7 @@ h2{
 </div>
 
 
-<!-- Carousel -->
+<!-- CAROUSEL -->
 <<div class="wrapper">
   <h2>Slick Carousel Example<h2>
 <div class="carousel">
