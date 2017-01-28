@@ -1,26 +1,13 @@
 ---
+layout: page
 ---
 <head>
-  <!-- CSS -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/sass/page.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/slick/slick-theme.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/slick/slick.css">
-
-  <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Martel" rel="stylesheet">
-<<<<<<< HEAD
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
-    <link href='../fonts/couture-bld.ttf' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Martel" rel="stylesheet">
-=======
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">  <link href='../fonts/couture-bld.ttf' rel='stylesheet' type='text/css'>
-
-    <link href="https://fonts.googleapis.com/css?family=Martel" rel="stylesheet">
-    <link rel="stylesheet" href="/slick/slick-theme.css">
-    <link rel="stylesheet" href="/slick/slick.css">
->>>>>>> f831af90fbe0fecb3fe422fd3a3f6f96138bc8ee
-
-  <!-- JAVASCRIPT -->
+  <!-- Page Specific CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/sass/home.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/slick/slick-theme.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/slick/slick.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/sass/slider.css">
+  <!-- Page Specific JAVASCRIPT -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
     <script type="text/javascript" src="/javascript/slider.js"></script>
 
@@ -51,9 +38,7 @@ h2{
 <body>
 
 <!-- HEADER & NAVBAR -->
-<div class="header">
-  {% include navbar.html %}
-</div>
+<div class="header"></div>
 
 <!-- START HERE -->
 <div class="start-here">
@@ -98,6 +83,4 @@ $(document).ready(function(){
   arrows: false;
   });
 });</script>
-<!-- FOOTER -->
-{% include footer.html %}
 </body>

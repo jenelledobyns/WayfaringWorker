@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title: "Hello World"
 date: January 24th, 2017
 author: Fisher Ankney

@@ -1,26 +1,28 @@
 ---
 ---
 <!DOCTYPE HTML>
+<html lang="en-US">
 
 <head>
-  <!-- css -->
+  <!-- CSS -->
   <link rel="stylesheet" href="{{ site.baseurl }}/sass/navbar.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/sass/wander.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/sass/footer.css">
-
-<!-- javascript -->
+<!-- Javascript -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/javascript/navbar.js"></script>
-<!-- fonts -->
-<link href='{{ site.baseurl }}/fonts/couture-bld.ttf' rel='stylesheet' type='text/css'>
-<link href='{{ site.baseurl }}/fonts/Roboto-Thin.ttf' rel='stylesheet' type='text/css'>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+<link href='{{site.baseurl}}/fonts/Roboto-Thin.ttf' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css?family=Martel" rel="stylesheet">
+<link href='{{ site.baseurl }}/fonts/couture-bld.ttf' rel='stylesheet' type='text/css'>
 </head>
-<html lang="en-US">
+
 
 <body>
 
 {% include navbar.html %}
+
 <div class="cover-image">
   <img src= "{{ site.baseurl }}/{{ page.image}}" alt="cover">
 </div>
@@ -34,7 +36,7 @@
 <br>
 <br>
 <br>
-<br>
+
 
 
     <div class="related-post">
@@ -85,11 +87,6 @@
     </div>
 
 
-
-
-
-
-
-
 {% include footer.html %}
+
 </body>

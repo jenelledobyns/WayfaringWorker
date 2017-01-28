@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title: "post number two"
 date:   2017-01-14 21:25:59 -0700
 author: Fisher Ankney
