@@ -1,6 +1,8 @@
 ---
 ---
 @import "bootstrap";
+@import url("font-awesome-4.7.0");
+
 // Fonts
   $body-font: 'Martel', serif;
   $title-font: 'Roboto', sans-serif;
@@ -131,3 +133,6 @@ p {
 }
 
 }
+
+// footer
+@import url("footer.css");
