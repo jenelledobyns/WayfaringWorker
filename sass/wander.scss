@@ -2,6 +2,9 @@
 ---
 
 @import "bootstrap";
+
+/// Website standards //
+
 // Fonts
   $body-font: 'Martel', serif;
   $title-font: 'Roboto', sans-serif;
@@ -13,63 +16,148 @@
   $button2-color: #8d8d8d;
   $form-color: #dcdcdc;
 
-// attempting to standardize image size...
-.container2 {
-  width: 800px;
-  height: 500px;
+
+// Wander Page CSS
+.wander-cover {
+  background: url('{{ site.baseurl}}/pics/1.jpg') no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  height: 550px;
+  box-shadow: 0px 0px 60px #6d6d6d;
+  margin-top: -100px;
 }
-.container2 img {
-  width: 100%;
-  height: auto;
+.wander-title h1 {
+  font-family: $title2-font;
+  color: $body-color;
+  font-size: 44px;
+  line-height: 15pt;
+  padding-top: 45px;
+  padding-bottom: 35px;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+.wander-title p {
+  font-family: $body-font;
+  color: $body-color;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 15pt;
+  padding-top: 0px;
+  padding-bottom: 30px;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+.wander-body {
+  text-align: center;
+  margin: auto;
+  width: 75%;
+}
+.wander-article {
+  padding-bottom:40px;
+}
+.wander-image {
+  height:500px;
+  overflow:hidden;
+  opacity:0.9;
+   &:hover {
+     opacity:1;
+   }
+}
+.wander-blurb h2 > a {
+  font-family: $title-font;
+  font-weight: 100;
+  color: $black !important;
+  line-height: -20px ;
+  font-size: 44px;
+  text-transform: uppercase;
+  text-align: center;
+    &:hover {
+       font-weight: bold;
+       text-decoration: none;
+    }
+}
+.wander-blurb h3 > a {
+  font-family: $body-font;
+  font-weight: 100;
+  color: $black !important;
+  line-height: -20px;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 0px;
+  &:hover {
+     font-weight: bold;
+     text-decoration: none;
+  }
+}
+.wander-blurb p > a {
+  font-family: $body-font;
+  font-weight: 100;
+  color: $black !important;
+  line-height: -20px;
+  font-size: 18px;
+  text-align: center;
+  &:hover {
+     font-weight: bold;
+     text-decoration: none;
+  }
 }
 
+
+// Indiividual Articles CSS
+.cover-image {
+  margin-top: -100px;
+  height: 550px;
+  overflow: hidden;
+  }
+.related-post {
+    padding: 15px;
+    margin:0 auto;
+    display: inline;
+    margin: auto;
+    text-align: center;
+}
+.rel {
+    width: 200px;
+    display: inline-block;
+    padding: 5px;
+    opacity: 0.8;
+}
+.rel hover {
+     opacity: 1;
+}
+.blog-image-1 {
+width: 90%;
+margin: auto;
+}
+.blog-image-2 {
+}
+.blog-image-3 {
+}
+.blog-content {
+  width: 70%;
+  margin: 0 auto;
+}
+ .row {
+   width: 100%;
+   padding: 50px;
+ }
 ul {
   list-style-type: none;
 }
-
 .fixed-image {
   height: 100%;
   width: 100%;
   vertical-align: middle;
   border: 0;
 }
-
-.header {
-background: url('../../pics/1.jpg') no-repeat center bottom;
--webkit-background-size: cover;
--moz-background-size: cover;
-height: 550px;
-box-shadow: 0px 0px 60px #6d6d6d;
-margin-top: -100px;
-}
-
-.start-here {
-  font-family: $body-font;
-  font-size: 16px;
-  line-height: 15pt;
-  color: $body-color;
-  width: 800px;
-  padding: 50px;
-  margin: auto;
-  text-align: center;
-}
-.start-here p {
-  font-style: italic;
-}
-
 h1 {
   font-family: $title2-font !important;
   font-size: 30pt;
   color: $black !important;
   text-align: center;
 }
-
-.blog {
-  text-align: center;
-  margin: auto;
-  width: 70%;
-}
-
 h2 > a {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
@@ -82,24 +170,28 @@ h2 > a {
       text-decoration: none;
     }
 }
-
-.subtitle {
-  margin-top: -15px;
-}
-
-  h3 {
+.subity {
   font-family: 'Myriad Pro', sans-serif;
   font-size: 22px;
   color: #636363;
-
+  text-align: center;
 }
-
 img {
    width: 100%;
 }
-
 p {
   font-family: 'Myriad Pro', sans-serif;
   color: #262626;
   font-size: 20px;
 }
+// .container2 {
+//   width: 100%;
+//   height: 500px;
+//   margin: 0;
+//   overflow: hidden;
+//
+// }
+// .container2 img {
+//   width: 100%;
+//   height: auto;
+// }
