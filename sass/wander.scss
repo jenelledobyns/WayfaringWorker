@@ -56,16 +56,16 @@
 }
 .wander-article {
   padding-bottom:40px;
+  opacity:0.9;
+  &:hover {
+    opacity:1;
+  }
 }
 .wander-image {
   height:500px;
   overflow:hidden;
-  opacity:0.9;
-   &:hover {
-     opacity:1;
-   }
 }
-.wander-blurb h2 > a {
+.wander-blurb h2 {
   font-family: $title-font;
   font-weight: 100;
   color: $black !important;
@@ -73,12 +73,8 @@
   font-size: 44px;
   text-transform: uppercase;
   text-align: center;
-    &:hover {
-       font-weight: bold;
-       text-decoration: none;
-    }
 }
-.wander-blurb h3 > a {
+.wander-blurb h3 {
   font-family: $body-font;
   font-weight: 100;
   color: $black !important;
@@ -86,21 +82,22 @@
   font-size: 24px;
   text-align: center;
   padding-top: 0px;
-  &:hover {
-     font-weight: bold;
-     text-decoration: none;
-  }
 }
-.wander-blurb p > a {
+.wander-blurb p {
   font-family: $body-font;
   font-weight: 100;
   color: $black !important;
   line-height: -20px;
   font-size: 18px;
   text-align: center;
+}
+.pagination {
+  text-align:center;
+}
+ a {
+   display: block;
   &:hover {
-     font-weight: bold;
-     text-decoration: none;
+    text-decoration: none !important;
   }
 }
 
