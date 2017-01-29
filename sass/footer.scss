@@ -12,6 +12,7 @@
   height: 240px;
   color: #fff !important;
   padding: 30px;
+  overflow: hidden;
 }
 
 .footer h3 {
@@ -34,7 +35,7 @@
     color: $black;
     border: 0;
     border-radius: 5px;
-    overflow: auto;
+     overflow: auto;
 &:focus {
   background: #ededed;
   outline: none;
@@ -53,11 +54,23 @@
     border: 0 !important;
     //-webkit-appearance: none;
 }
-.copyright {
+.copyright  {
   text-align: center;
-  font-size: 10pt;
   padding-top: 50px;
   margin: auto;
-  font-family: 'Martel', serif;
-  color: #c6c6c6;
+
+}
+
+.copyright p {
+    font-size: 10pt;
+    font-family: 'Martel', serif !important;
+    color: #c6c6c6 !important;
+}
+.col-sm-6.col-sm-4.col-sm-2 {
+
+  padding: 0;
+}
+
+.row {
+  padding: 0px !important;
 }

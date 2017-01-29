@@ -5,7 +5,7 @@ date: January 24th, 2017
 author: Fisher Ankney
 categories: how
 tags: [does, this, work]
-image: pics/postpic1.jpg
+image: assets/images//postpic1.jpg
 excerpt:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
 ---
 <link rel="stylesheet" href="{{ site.baseurl }}/sass/wander.css">

@@ -18,8 +18,9 @@
 
 
 // Wander Page CSS
+
 .wander-cover {
-  background: url('{{ site.baseurl}}/pics/1.jpg') no-repeat center bottom;
+  background: url('{{ site.baseurl}}/assets/images/1.jpg') no-repeat center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   height: 550px;
@@ -181,6 +182,7 @@ p {
   color: #262626;
   font-size: 20px;
 }
+
 // .container2 {
 //   width: 100%;
 //   height: 500px;

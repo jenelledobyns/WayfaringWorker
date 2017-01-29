@@ -4,12 +4,13 @@ layout: page
 <head>
   <!-- Page Specific CSS -->
   <link rel="stylesheet" href="{{ site.baseurl }}/sass/home.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/slick/slick-theme.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/slick/slick.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/sass/slider.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/slick/slick-theme.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/slick/slick.css">
   <!-- Page Specific JAVASCRIPT -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
-    <script type="text/javascript" src="/javascript/slider.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/javascript/slider.js"></script>
+
 
 <style>
 .wrapper{
@@ -80,7 +81,7 @@ $(document).ready(function(){
   slidesToShow: 3,
   dots: false,
   centerMode: true,
-  arrows: false;
+  arrows: false,
   });
 });</script>
 </body>
