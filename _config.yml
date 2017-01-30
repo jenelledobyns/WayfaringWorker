@@ -21,10 +21,20 @@ description: > # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
-paginate: 2
-paginate_path: "/wander/page:num"
+twitter_username:
+github_username:
+
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 1
+  permalink: '/page/:num/'
+  title: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+
+permalink: /:year/:month/:title.html
 
 # Build settings
 markdown: kramdown
@@ -32,7 +42,7 @@ theme: minima
 gems:
   - jekyll-feed
   - jekyll-bootstrap-sass
-  - jekyll-paginate
+  - jekyll-paginate-v2
 
 exclude:
   - Gemfile
