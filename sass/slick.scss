@@ -1,6 +1,19 @@
 ---
 ---
 /* Slider */
+.slider{
+  width: 100%;
+  margin: 0 auto;
+  // overflow: hidden;
+}
+
+// .slide {
+//   margin: 0;
+// }
+
+.slider .img {
+  width: 200px;
+}
 
 .slick-slider {
     position: relative;
