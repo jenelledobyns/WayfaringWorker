@@ -97,26 +97,48 @@ a {
   font-size: 18px;
   text-align: center;
 }
-// .pagination {
-//   margin: auto;
-//   text-align: center;
-//   display: inline-block;
-//   width: 300px;
-//  }
+.pager {
+  width: 75%;
+  margin: auto;
+  padding-bottom: 40px;
+}
+.pager li > a {
+  background-color: #282828;
+  border-radius: 5;
+  font-size: 16pt;
+  color: rgba(255,255,255,0.7);
+  font-family: $title-font;
+  font-weight: bold;
+  padding: 5px 15px;
+  text-transform: capitalize;
+  &:hover {
+    color:white;
+    background: #282828;
+    }
+}
+.fa-chevron-right {
+  padding-left: 5px;
+  padding-right: 0px;
+  color: rgba(255,255,255,0.7);
+  font-size: 14pt;
+  &:hover {
+    color: white;
+    }
+}
+.fa-chevron-left {
+  padding-left: 0px;
+  padding-right: 5px;
+  color: rgba(255,255,255,0.7);
+  font-size: 14pt;
+  &:hover {
+    color: white;
+    }
+}
 
-// .left {
-//   float: left;
-// }
-// .right {
-//   float: right;
-// }
-//  .wrap {
-//    overflow: hidden;
-//  }
-//
-//  .center {
-// float: ;
-//  }
+
+
+
+
 
 
 // Indiividual Articles CSS
