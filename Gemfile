@@ -15,7 +15,7 @@ gem "jekyll", "3.3.1"
 gem "minima", "~> 2.0"
 gem 'jekyll-bootstrap-sass'
 gem 'font-awesome-sass'
-gem 'jekyll-paginate'
+gem 'jekyll-paginate-v2'
 
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
@@ -25,5 +25,5 @@ gem 'jekyll-paginate'
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-paginate-v2"
-   gem "jekyll-feed", "~> 0.6"
+  gem "jekyll-feed", "~> 0.6"
 end
