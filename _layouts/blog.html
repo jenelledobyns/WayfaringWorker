@@ -22,17 +22,15 @@
 
 {% include navbar.html %}
 <!-- Header -->
-<div class="cover-image">
-  <img src= "{{ site.baseurl }}/{{ page.cover}}" alt="cover">
+<div class="cover">
+  <img class="cover-image" src= "{{ site.baseurl }}/{{ page.cover}}" alt="cover">
 </div>
 
 <h2 class="post-title">{{ page.title }}</h2>
 <h3 class="post-subtitle"> {{ page.author }} // {{ page.date | date: '%B %d, %Y' }} </h3>
 
 <!-- Content -->
-<div class="content">
     {{ content }}
-</div>
 
 
 <!-- Share & Sub-->

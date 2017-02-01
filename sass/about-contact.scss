@@ -16,9 +16,8 @@
   $form-color: #dcdcdc;
 
 
-// Wander Page CSS
-
-.wander-cover {
+// About Page CSS
+.about-cover {
   background: url('{{ site.baseurl}}/assets/images/1.jpg') no-repeat center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -26,7 +25,7 @@
   box-shadow: 0px 0px 60px #6d6d6d;
   margin-top: -100px;
 }
-.wander-title h1 {
+.about-title h1 {
   font-family: $title2-font;
   color: $body-color;
   font-size: 44px;
@@ -37,6 +36,46 @@
   margin: auto;
   text-align: center;
 }
+
+
+.contact-cover {
+  background: url('{{ site.baseurl}}/assets/images/1.jpg') no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  height: 300px;
+  box-shadow: 0px 0px 60px #6d6d6d;
+  margin-top: -100px;
+}
+.contact-title h1 {
+  font-family: $title2-font;
+  color: $body-color;
+  font-size: 44px;
+  line-height: 15pt;
+  padding-top: 45px;
+  padding-bottom: 35px;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// UNUSED CSS
+
+
+
+
+
+
 .wander-title p {
   font-family: $body-font;
   color: $body-color;
