@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/sass/navbar.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/sass/wander.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/sass/footer.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- Javascript -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/assets/javascript/navbar.js"></script>
@@ -34,22 +35,31 @@
 
 
 <!-- Share & Sub-->
-<div class="share-sub">
   <div class="row">
-    <div class="col-md-2"><h2>Share</h2></div>
-    <div class="col-md-8"></div>
+    <div class="col-md-1"></div>
+    <div class="col-md-2 share"><h2>Share</h2></div>
+    <div class="col-md-6"></div>
     <div class="col-md-2"><h2>Subscribe</h2></div>
+    <div class="col-md-1"></div>
   </div>
-    <div class="row">
-      <div class="col-md-2"><h4>Icons here </h2></div>
-      <div class="col-md-8"></div>
-      <div class="col-md-2"><h4>subscribe bar</h4></div>
-  </div>
-</div>
 
-<!-- Related Content -->
+      <div class="row bottomwrapper">
+      <div class="col-md-4 share-icons">
+        <i class="fa fa-facebook-official fa-4x share-fa" aria-hidden="true"></i>
+        <i class="fa fa-instagram fa-4x share-fa" aria-hidden="true"></i>
+        <i class="fa fa-snapchat fa-4x share-fa" aria-hidden="true"></i>
+        <i class="fa fa-twitter-square fa-4x share-fa" aria-hidden="true"></i>
+      </div>
+      <div class="col-md-4">
+        <h1>Related</h1>
+      </div>
+      <div class="col-md-4 sub-bar">
+        <input type="text" name="email" placeholder="Search the site..." class="searchform"><button type="submit" class="searchclk"><i class="fa fa-search fa-2x" aria-hidden="true"></i>
+        </button></form>
+      </div>
+    </div>
+
 <div class="related">
-<h2>Related</h2>
 
   {% assign maxRelated = 4 %}
   {% assign minCommonTags =  1 %}
@@ -73,9 +83,10 @@
     {% if sameTagCount >= minCommonTags %}
 
           <a href="{{ site.baseurl }}{{ post.url }}">
-              <div class="related-thumb">
-                <img width="100%" src="/{{ post.cover }}">
-                  <h5>{{ post.title }}</h5>
+              <div class="related-thumb col-md-6">
+                <img class="related-img" src="/{{ post.cover }}">
+                  <h2>{{ post.title }}</h2>
+                  <h3> {{ page.author }} // {{ page.date | date: '%B %d, %Y' }} </h3>
               </div>
           </a>
 

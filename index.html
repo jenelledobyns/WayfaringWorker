@@ -59,10 +59,25 @@ layout: page
 
 <!-- BLAG -->
 <h1>From the Blog</h1>
-<div class="blog">
-  <img src="https://s-media-cache-ak0.pinimg.com/originals/d3/c4/2a/d3c42a5fafa640f90c4c3746f9fb2c22.jpg">
-  <h2> 30 Days in Thailand</h2>
-  <div id="subtitle"><h3>Fisher Ankney // January 14th, 2017</h3></div>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<div class="wander-body">
+  <ul>
+    {% for post in site.posts limit:4 %}
+      <li>
+        <a href="{{ post.url }}">
+        <div class="wander-article">
+          <div class="wander-image">
+          <img class="wander-image2" src= "{{  site.baseurl }}/{{ post.cover }}">
+           </div>
+           <div class="wander-blurb">
+             <h2>{{ post.title }}</h2>
+             <h3> {{ post.author }} // {{ post.date | date: '%B %d, %Y' }}</h3>
+             <p> {{ post.excerpt }} </p>
+           </div>
+         </div>
+       </a>
+      </li>
+    {% endfor %}
+  </ul>
 </div>
+
 </body>
