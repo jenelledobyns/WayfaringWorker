@@ -65,14 +65,15 @@ position: relative;
 .start-here {
   text-align: center;
   margin: auto;
-  width: 75%;
+  width: 60%;
 
   p {
   font-family: $body-font;
-  font-size: 22pt;
+  font-size: 18pt;
   font-style: italic;
   color: $body-color;
-  padding: 20px;
+  padding-bottom: 20px;
+  padding-top: 30px;
   }
 
   .start {
@@ -128,7 +129,7 @@ position: relative;
       background: $button2-color;
       color: white;
       font-size: 16px;
-      line-height: 20px;
+      line-height: 5px;
       padding: 11px;
       border: 0;
       border-radius: 0px 8px 8px 0px;
@@ -143,9 +144,10 @@ position: relative;
 h1 {
   font-family: $title-font;
   font-weight: bold;
-  font-size: 30pt;
+  font-size: 44pt;
   color: $black !important;
   text-align: center;
+  padding-top: 20px;
 }
 
 
