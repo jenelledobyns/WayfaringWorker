@@ -65,7 +65,7 @@ position: relative;
 .start-here {
   text-align: center;
   margin: auto;
-  width: 60%;
+  width: 75%;
 
   p {
   font-family: $body-font;
@@ -88,6 +88,7 @@ position: relative;
     color: rgba(255,255,255,0.8) !important;
     border: none;
     margin-right: 30px;
+    float: left;
     &:hover {
       background-color: #fff;
     }
@@ -103,6 +104,7 @@ position: relative;
     margin-left:50px;
   }
   input[type="text"] {
+    float: left;
     font-size: 14pt;
     font-family: $body-font;
     width:500px;
@@ -121,24 +123,72 @@ position: relative;
 
   }
 
-  button[type="submit"] {
-      margin-left: -120px;
-      margin-top: -5px;
-      height: 52px;
-      width: 120px;
-      background: $button2-color;
-      color: white;
-      font-size: 16px;
-      line-height: 5px;
-      padding: 11px;
-      border: 0;
-      border-radius: 0px 8px 8px 0px;
-      font-family: 'Couture', sans-serif;
-      vertical-align: center;
-      text-align: center;
-  }
+
+
+
+.ajax-form { width: 100%; }
+.ajax-form input,
+.ajax-form textarea {
+  	padding: 20px;
+  	border: 3px solid #ccc;
+  	border-radius: 6px;
+  	margin: 0 0 27px;
+    background: #eee;
+    outline: none;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
 }
 
+.ajax-form input:focus,
+.ajax-form textarea:focus {
+  	border: 3px solid #4c4c4c;
+    color: #424651;
+}
+
+.ajax-form input[type="submit"] {
+    border: 3px solid #4c4c4c;
+	color: #4c4c4c;
+  float: right;
+}
+
+.ajax-form input[type="submit"]:hover {
+  	background-color: #4c4c4c;
+    border: 3px solid #4c4c4c;
+    color: white;
+    float:right;
+}
+
+.name, .email { width: 48%; }
+
+.name { float: left; }
+.email { float: right }
+
+.message {
+  width: 100%;
+}
+
+// .form-btn { text-align: center; }
+
+.error { border: 3px solid #ED1941 !important; }
+
+.form-thank-you {
+  	display: none;
+  	width: 100%;
+  	text-align: center;
+}
+
+.form-thank-you h3 { padding-top: 15px; }
+
+@media (max-width: 577px) {
+  .name, .email {
+  	width: 100%;
+  	float: none;
+  }
+
+}
+}
 // TOP ARTICLES SLIDER
 
 h1 {
