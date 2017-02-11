@@ -7,7 +7,7 @@
 // Fonts
   $body-font: 'Martel', serif;
   $title-font: 'Roboto', sans-serif;
-  $title2-font: 'Couture', sans-serif;
+  $title2-font: 'Roboto', sans-serif;
 
 // Colors
   $body-color: #959595;
@@ -22,20 +22,20 @@
   background: url('{{ site.baseurl}}/assets/images/1.jpg') no-repeat center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  height: 550px;
-  box-shadow: 0px 0px 60px #6d6d6d;
+  height: 300px;
   margin-top: -100px;
 }
 .wander-title h1 {
-  font-family: $title2-font;
-  color: $body-color;
-  font-size: 44px;
+  font-family: $title-font;
+  font-weight: bold;
+  font-size: 44pt;
+  color: $black !important;
+  text-align: center;
   line-height: 15pt;
   padding-top: 45px;
   padding-bottom: 35px;
   width: 70%;
   margin: auto;
-  text-align: center;
 }
 .wander-title p {
   font-family: $body-font;
@@ -67,11 +67,12 @@ a {
    text-decoration: none !important;
  }
 }
-.wander-image {
-  height:500px;
+.wander-image2 {
   overflow:hidden;
+  width:100%;
+  height:600px;
 }
-.wander-blurb h2 {
+.wander-blurb > h2 {
   font-family: $title-font;
   font-weight: 100;
   color: $black !important;
@@ -79,8 +80,9 @@ a {
   font-size: 44px;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 10px;
 }
-.wander-blurb h3 {
+.wander-blurb > h3 {
   font-family: $body-font;
   font-weight: 100;
   color: $black !important;
@@ -88,14 +90,19 @@ a {
   font-size: 24px;
   text-align: center;
   padding-top: 0px;
+  margin-top: 5px;
 }
-.wander-blurb p {
+.wander-blurb > p {
   font-family: $body-font;
   font-weight: 100;
   color: $black !important;
   line-height: -20px;
   font-size: 18px;
   text-align: center;
+  padding-bottom: 30px;
+}
+ul {
+  list-style-type: none;
 }
 .pager {
   width: 75%;
@@ -137,98 +144,158 @@ a {
 
 
 
-
-
-
-
-// Indiividual Articles CSS
-.cover-image {
+// Blog Layout CSS
+.cover {
   margin-top: -100px;
-  height: 550px;
   overflow: hidden;
   }
-.related-post {
-    padding: 15px;
-    margin:0 auto;
-    display: inline;
-    margin: auto;
+.cover-image {
+  width:100%;
+  height:100%;
+}
+.post-title {
+  font-family: $title-font;
+  font-weight: 100;
+  color: $black !important;
+  line-height: -20px ;
+  font-size: 52px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+}
+.post-subtitle {
+  font-family: $body-font;
+  font-weight: 100;
+  color: $black !important;
+  line-height: -20px;
+  font-size: 26px;
+  text-align: center;
+  padding-top: 0px;
+  margin-top: 15px;
+}
+
+.bottomwrapper {
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+  text-align: center;
+
+  .col-md-4 {
+    padding: 0 !important;
+    height: 60px !important;
+  }
+
+  h1 {
+    font-family: $title-font !important;
     text-align: center;
+    font-size: 36pt !important;
+    text-transform:uppercase !important;
+    color: $black !important;
+    margin: 0 !important;
+    margin-top: 4px;
+  }
 }
-.rel {
-    width: 200px;
-    display: inline-block;
-    padding: 5px;
-    opacity: 0.8;
+.share {
+  text-align: left;
 }
-.rel hover {
-     opacity: 1;
+// .share-icons {
+//   text-align:center;
+// }
+// .sub-bar {
+//   text-align:center;
+// }
+.row {
+  width: 100%;
+  padding: 50px;
 }
-.blog-image-1 {
-width: 90%;
-margin: auto;
+.share-fa {
+  color: #000 !important;
+  padding-right: 15px;
 }
-.blog-image-2 {
+
+
+
+.related{
+  h1 {
+    font-family: $title-font !important;
+    text-align:center;
+    font-size: 36pt !important;
+    text-transform:uppercase !important;
+    color: $black !important;
+    padding-bottom: 20px;
+  }
+  h2 {
+    font-family: $title-font !important;
+    font-weight: 100;
+    text-align:center;
+    font-size: 28pt !important;
+    text-transform:uppercase !important;
+    margin-bottom: -10px;
+    color: $black !important;
+  a, a:active, a:visited {
+    color: $black !important;
+    }
+  }
+  h3 {
+    font-family: $body-font;
+    font-weight: 100;
+    color: $black !important;
+    line-height: -20px;
+    font-size: 18pt;
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 15px;
+  }
 }
-.blog-image-3 {
+.related-img {
+  height: 400px;
+  width: 600px;
+  padding: 10px;
 }
+.related-thumb {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+
+
+
+// Content Specific CSS
 .blog-content {
   width: 70%;
   margin: 0 auto;
+  font-family: $body-font;
+  font-size: 16pt;
+  color: black;
+  padding-top:20px;
+  text-indent: 50px;
 }
- .row {
-   width: 100%;
-   padding: 50px;
- }
-ul {
-  list-style-type: none;
+.image-template {
+width: 90%;
+margin: auto;
 }
-.fixed-image {
-  height: 100%;
+.blog-img {
+  padding-top:15px;
   width: 100%;
-  vertical-align: middle;
-  border: 0;
+  height: 100%;
 }
+
+
+
+
+// UNKNOWN CSS
 h1 {
   font-family: $title2-font !important;
   font-size: 30pt;
   color: $black !important;
   text-align: center;
 }
-h2 > a {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  color: $black !important;
-  line-height: -20px;
-  font-size: 44px;
-  text-transform: uppercase;
-    &:hover {
-      font-weight: bold;
-      text-decoration: none;
-    }
-}
-.subity {
-  font-family: 'Myriad Pro', sans-serif;
-  font-size: 22px;
-  color: #636363;
-  text-align: center;
-}
-img {
-   width: 100%;
-}
 p {
   font-family: 'Myriad Pro', sans-serif;
   color: #262626;
   font-size: 20px;
 }
-
-// .container2 {
-//   width: 100%;
-//   height: 500px;
-//   margin: 0;
-//   overflow: hidden;
-//
-// }
-// .container2 img {
-//   width: 100%;
-//   height: auto;
-// }

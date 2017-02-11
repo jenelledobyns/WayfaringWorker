@@ -31,7 +31,6 @@ GEM
       jekyll (>= 2.5)
     jekyll-feed (0.8.0)
       jekyll (~> 3.3)
-    jekyll-paginate (1.1.0)
     jekyll-paginate-v2 (1.7.0)
       jekyll (~> 3.0)
     jekyll-sass-converter (1.5.0)
@@ -65,7 +64,6 @@ DEPENDENCIES
   jekyll (= 3.3.1)
   jekyll-bootstrap-sass
   jekyll-feed (~> 0.6)
-  jekyll-paginate
   jekyll-paginate-v2
   minima (~> 2.0)
 
