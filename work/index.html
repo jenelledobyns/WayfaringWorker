@@ -1,22 +1,80 @@
 ---
 layout: page
 ---
-<head>
-<!-- Page Specific CSS -->
-<link rel="stylesheet" href="{{ site.baseurl }}/sass/work.css">
-<!-- Page Specific Javascript -->
-</head>
 
-<body>
-  <div class="header"> </div>
-  <div class="container">
-  <div class="row">
-    <div class="col-sm-8">
-      <h1>WORK</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<link rel="stylesheet" href="{{ site.baseurl }}/sass/work.css">
+<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+
+<div class="header"> </div>
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <h1>WORK</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-sm-4">
+
+
+
+                <div class="container">
+
+                    <div class="panel-group">
+                        <div class="panel panel-default">
+                            <a data-toggle="collapse" href="#collapse1">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                     Teach English<i class="fa fa-chevron-right"></i>
+                                    </h4>
+                                </div>
+                            </a>
+                            <div id="collapse1" class="panel-collapse collapse">
+                                <ul class="list-group">
+                                    <li class="list-group-item">One</li>
+                                    <li class="list-group-item">Two</li>
+                                    <li class="list-group-item">Three</li>
+                                </ul>
+                            </div>
+                            <a data-toggle="collapse" href="#collapse2">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Teach English<i class="fa fa-chevron-right"></i>
+        </h4> </div>
+                            </a>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <ul class="list-group">
+                                    <li class="list-group-item">One</li>
+                                    <li class="list-group-item">Two</li>
+                                    <li class="list-group-item">Three</li>
+                                </ul>
+                            </div>
+                            <a data-toggle="collapse" href="#collapse3">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+Teach English<i class="fa fa-chevron-right"></i></h4> </div>
+                            </a>
+
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <ul class="list-group">
+                                    <li class="list-group-item">One</li>
+                                    <li class="list-group-item">Two</li>
+                                    <li class="list-group-item">Three</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
     </div>
-   <div class="col-sm-4">
-   </div>
-  </div>
-</div>
-</body>
+
+    <script>
+        $('.panel-title').click(function() {
+            // $(this).next('ul').slideToggle('500');
+            $(this).find('i').toggleClass('fa-chevron-right fa-chevron-down')
+        });
+    </script>
