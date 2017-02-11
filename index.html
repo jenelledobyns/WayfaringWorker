@@ -26,17 +26,18 @@ layout: page
 <div class="start-here">
 
   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
-  <a href="{{ site.baseurl }}/about.html"<button type="button" class="btn btn-primary btn-large start">Start Here</button></a>
+  <div class="startherebtn">
+    <a href="{{ site.baseurl }}/about.html">
+    <button type="button" class="btn btn-primary btn-large start">Start Here</button>
+  </a>
+</div>
+
+<div class="subscribeform">
 <form class="ajax-form" method="POST" action="http://formspree.io/fisherankney@gmail.com">
   <input type="text" class="email" name="email" placeholder="Enter your email for updates">
   <input type="submit" class="submit" value="Submit">
 </form>
 </div>
-
- <div class="form-thank-you">
-     <h3>Thanks for Subscribing!</h3>
- </div>
-
 </div>
 
 <!-- CAROUSEL -->
@@ -96,34 +97,5 @@ layout: page
     {% endfor %}
   </ul>
 </div>
-
-
-
-
-<form action="/search.html" method="get">
-  <label for="search_box">Search</label>
-  <input type="text" id="search_box" name="query">
-  <input type="submit" value="search">
-</form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
