@@ -1,11 +1,25 @@
 ---
 layout: page
 ---
+<head>
+  <link rel="stylesheet" href="{{ site.baseurl }}/sass/search.css">
+</head>
+
+<body>
+
+<div class="search-header"></div>
+  <div class="search-title">
+    <h1>Search</h1>
+  </div>
+
+<div class="searcher row">
+  <div class="col-sm-3"></div>
 <form action="/search.html" method="get">
-  <label for="search-box">Search</label>
-  <input type="text" id="search-box" name="query">
-  <input type="submit" value="search">
+  <input type="text" id="search-box" class="col-sm-4"  name="query">
+  <button type="submit"  value="search" class="searchclk fa fa-search fa-3x col-sm-2" aria-hidden="true"></button>
 </form>
+<div class="col-sm-3"></div>
+</div>
 
 <ul id="search-results"></ul>
 
