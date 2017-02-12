@@ -63,12 +63,12 @@ position: relative;
 
 //  START / SUBSCRIBE ROW
 .start-here {
-
-  text-align: center !important;
-  margin: auto;
-  width: 100%;
-  padding-bottom: 20px;
-  background-color: #f2f2f2;
+  //
+  // text-align: center !important;
+  // margin: auto;
+  // width: 100%;
+  // padding-bottom: 20px;
+  // background-color: #f2f2f2;
 
   p {
   font-family: $body-font;
@@ -127,103 +127,105 @@ justify-content: center !important;
   margin: 10px auto;
   height: 52px;
   padding: 0;
-
-  form {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  }
-}
-  input[type="text"] {
-
-    font-size: 14pt;
-    font-family: $body-font;
-    width:500px;
-    height: 52px;
-    padding: 5px 8px 5px 8px;
-    background: $form-color;
-    border: 0;
-    border-radius: 8px;
-    overflow: auto;
-  &:focus {
-    background: #cecece;
-    outline: none;
-  }
-
-  }
-
-
-
-
-.ajax-form { width: 100%; }
-.ajax-form input,
-.ajax-form textarea {
-    float: left;
-  	padding: 20px;
-  	border: 3px solid #ccc;
-  	border-radius: 6px;
-  	margin: 0 0 27px;
-    background: white;
-    outline: none;
-    -webkit-transition: all .25s ease-in-out;
-    -moz-transition: all .25s ease-in-out;
-    -o-transition: all .25s ease-in-out;
-    transition: all .25s ease-in-out;
 }
 
-.ajax-form input:focus,
-.ajax-form textarea:focus {
-  	border: 3px solid #4c4c4c;
-    color: #f7f7f7;
-}
+  // form {
+  // display: flex !important;
+  // align-items: center !important;
+  // justify-content: center !important;
+  // }
+// }
+//   input[type="text"] {
+//
+//     font-size: 14pt;
+//     font-family: $body-font;
+//     width:500px;
+//     height: 52px;
+//     padding: 5px 8px 5px 8px;
+//     background: $form-color;
+//     border: 0;
+//     border-radius: 8px;
+//     overflow: auto;
+//   &:focus {
+//     background: #cecece;
+//     outline: none;
+//   }
+//
+//   }
+//
+//
+//
+//
+// .ajax-form { width: 100%; }
+// .ajax-form input,
+// .ajax-form textarea {
+//     float: left;
+//   	padding: 20px;
+//   	border: 3px solid #ccc;
+//   	border-radius: 6px;
+//   	margin: 0 0 27px;
+//     background: white;
+//     outline: none;
+//     -webkit-transition: all .25s ease-in-out;
+//     -moz-transition: all .25s ease-in-out;
+//     -o-transition: all .25s ease-in-out;
+//     transition: all .25s ease-in-out;
+// }
+//
+// .ajax-form input:focus,
+// .ajax-form textarea:focus {
+//   	border: 3px solid #4c4c4c;
+//     color: #f7f7f7;
+// }
+//
+// .ajax-form input[type="submit"] {
+//     border: 3px solid #999999;
+// 	color: #999999;
+//   background-color: #d1d1d1;
+//   height: 50px;
+//   font-family: 'Couture', sans-serif;
+//   text-transform: uppercase;
+//   letter-spacing: 1px;
+//   font-size: 16px;
+//   padding: 8px;
+//   margin-left: 20px;
+// }
+//
+// .ajax-form input[type="submit"]:hover {
+//   	background-color: #999999;
+//     border: 3px solid #999999;
+//     color: white;
+//
+// }
+//
+// .name, .email { width: 48%; }
+//
+// .name { float: left; }
+// .email { float: right }
+//
+// .message {
+//   width: 100%;
+// }
+//
+// // .form-btn { text-align: center; }
+//
+// .error { border: 3px solid #ED1941 !important; }
+//
+// .form-thank-you {
+//   	display: none;
+//   	width: 100%;
+//   	text-align: center;
+// }
+//
+// .form-thank-you h3 { padding-top: 15px; }
+//
+// @media (max-width: 577px) {
+//   .name, .email {
+//   	width: 100%;
+//   	float: none;
+//   }
+// }
 
-.ajax-form input[type="submit"] {
-    border: 3px solid #999999;
-	color: #999999;
-  background-color: #d1d1d1;
-  height: 50px;
-  font-family: 'Couture', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 16px;
-  padding: 8px;
-  margin-left: 20px;
-}
-
-.ajax-form input[type="submit"]:hover {
-  	background-color: #999999;
-    border: 3px solid #999999;
-    color: white;
-
-}
-
-.name, .email { width: 48%; }
-
-.name { float: left; }
-.email { float: right }
-
-.message {
-  width: 100%;
-}
-
-// .form-btn { text-align: center; }
-
-.error { border: 3px solid #ED1941 !important; }
-
-.form-thank-you {
-  	display: none;
-  	width: 100%;
-  	text-align: center;
-}
-
-.form-thank-you h3 { padding-top: 15px; }
-
-@media (max-width: 577px) {
-  .name, .email {
-  	width: 100%;
-  	float: none;
-  }
-}
 // TOP ARTICLES SLIDER
 
 h1 {
@@ -305,4 +307,111 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+
+
+
+.email-full {
+  width:70%;
+  margin: 0 auto;
+  padding-top: 40px;
+  }
+/* Normalize & Reset */
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    color: #777;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
+}
+
+button,
+input,
+textarea {
+    color: inherit; /* 1 */
+    font: inherit; /* 2 */
+    margin: 0; /* 3 */
+}
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Form Styles */
+
+.ajax-form { width: 100%; }
+.ajax-form input,
+.ajax-form textarea {
+  	padding: 20px;
+  	border: 3px solid #ccc;
+  	border-radius: 6px;
+  	margin: 0 0 27px;
+    background: #eee;
+    outline: none;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+.ajax-form input:focus,
+.ajax-form textarea:focus {
+  	border: 3px solid #4c4c4c;
+    color: #424651;
+}
+
+.ajax-form input[type="submit"] {
+    border: 3px solid #4c4c4c;
+	color: #4c4c4c;
+}
+
+.ajax-form input[type="submit"]:hover {
+  	background-color: #4c4c4c;
+    border: 3px solid #4c4c4c;
+    color: white;
+}
+
+.name, .email { width: 48%; }
+
+.name { float: left; }
+.email { float: right }
+
+.message {
+  width: 100%;
+
+}
+
+.form-btn { text-align: center; }
+
+.error { border: 3px solid #ED1941 !important; }
+
+.form-thank-you {
+  	display: none;
+  	width: 100%;
+  	text-align: center;
+}
+
+.form-thank-you h3 { padding-top: 15px; }
+
+@media (max-width: 577px) {
+  .name, .email {
+  	width: 100%;
+  	float: none;
+  }
+}
+
+.email-container {
+  background: #fff;
+  margin-top:40px;
+  margin-left: 100px;
+  margin-right: 100px;
+  border: 3px;
+  border-style: solid;
+  margin-bottom: 40px;
+  border-style: solid;
+  border-radius: 8px;
 }
