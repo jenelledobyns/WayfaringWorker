@@ -1,7 +1,6 @@
 ---
 ---
 @import "default";
-@import "bootstrap";
 
 .about-cover {
   background: url('{{ site.baseurl}}/assets/images/1.jpg') no-repeat center bottom;
@@ -102,7 +101,7 @@ padding-bottom: 15px;
   height: 100%;
 }
 
-.linkey {
+.link-list {
   font-size: 16pt;
   font-family:$body-font;
   margin: 0 auto;

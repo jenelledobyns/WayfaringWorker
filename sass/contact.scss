@@ -1,8 +1,8 @@
 ---
 ---
 @import "default";
-// @import "bootstrap";
 
+// HEADER //
 .contact-cover {
   background: url('{{ site.baseurl}}/assets/images/1.jpg') no-repeat center bottom;
   -webkit-background-size: cover;
@@ -23,7 +23,9 @@
   margin: auto;
   text-align: center;
   }
- .col-sm-8 p {
+
+  // TEXT & PICTURE //
+   .col-sm-8 p {
  float: left;
   width: 80%;
   margin: 0 auto;
@@ -39,6 +41,7 @@
   float: right;
 }
 
+// CONTACT FORM //
 .email-container {
   background: #fff;
   margin: 40 100 40 100px;
@@ -51,9 +54,6 @@
   margin: 0 auto;
   padding-top: 40px;
   }
-
-
-// STYLES FOR CONTACT FORM
 
 body {
   font-family: Helvetica, Arial, sans-serif;
