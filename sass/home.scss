@@ -1,22 +1,10 @@
 ---
 ---
-@import "bootstrap";
+@import "default";
 @import url("font-awesome-4.7.0");
-
-// Fonts
-  $body-font: 'Martel', serif;
-  $title-font: 'Roboto', sans-serif;
-  $title2-font: 'Roboto', bold, sans-serif;
-
-// Colors
-  $body-color: #959595;
-  $black: #4c4c4c;
-  $button2-color: #8d8d8d;
-  $form-color: #dcdcdc;
 
 
 // HEADER STYLES
-
 .header {
 background: url('{{ site.baseurl }}/assets/images/1.jpg') no-repeat center bottom;
 -webkit-background-size: cover;
