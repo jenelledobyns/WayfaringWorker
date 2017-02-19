@@ -18,47 +18,27 @@
 // HEADER STYLES
 
 .header {
-background: url('{{ site.baseurl }}/assets/images/1.jpg') no-repeat center bottom;
+background: url('{{ site.baseurl }}/assets/images/6.jpg') no-repeat center center;
 -webkit-background-size: cover;
 -moz-background-size: cover;
-height: 900px;
+height: calc(100vh + 100px);
 margin-top: -100px;
 overflow: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 40px;
 }
-.title {
-  width: 100%;
-  margin-top: 600px;
-  color: white;
-  background-color: rgba(0,0,0,0.3);
-  height: 180px;
-  padding-left: 260px;
-  padding-top: 30px;
-position: relative;
-}
-.titlecontent {
-  position: absolute;
-  bottom: 5px;
-  text-align: center;
-  h1 {
-    font-family: $title-font;
-    text-transform: uppercase;
-    font-size: 64pt;
-    font-weight: 100;
-    letter-spacing: normal;
-    color: white !important;
-    text-align: left;
-    line-height: 35px;
+
+.logo {
+  margin-top: 100px;
+  img {
+    width: 200px;
+    height: auto;
   }
-  h2 {
-    font-family: $body-font;
-    font-size: 18pt;
-    color: rgba(255,255,255,0.7);
-    text-align: left;
-    letter-spacing: 0px;
-    font-style: italic;
-    padding-left: 10px;
-  }
+
 }
+
 
 
 //  START / SUBSCRIBE ROW
@@ -313,9 +293,9 @@ ul {
 
 
 .email-full {
-  width:70%;
+  width: 80%;
   margin: 0 auto;
-  padding-top: 40px;
+  padding: 20px;
   }
 /* Normalize & Reset */
 
@@ -348,25 +328,30 @@ textarea {
 .ajax-form input,
 .ajax-form textarea {
   	padding: 20px;
-  	border: 3px solid #ccc;
-  	border-radius: 6px;
+  	border: 0;
   	margin: 0 0 27px;
-    background: #eee;
+    background: #fff;
+    border: 3px solid #fff;
+
     outline: none;
     -webkit-transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
     -o-transition: all .25s ease-in-out;
     transition: all .25s ease-in-out;
+    height: 40px;
 }
 .ajax-form input:focus,
 .ajax-form textarea:focus {
-  	border: 3px solid #4c4c4c;
+  	border: 3px solid #e2e2e2;
     color: #424651;
 }
 
 .ajax-form input[type="submit"] {
     border: 3px solid #4c4c4c;
-	color: #4c4c4c;
+	  color: #fff;
+    padding: 20px;
+    background-color: #4c4c4c;
+
 }
 
 .ajax-form input[type="submit"]:hover {
@@ -405,13 +390,23 @@ textarea {
 }
 
 .email-container {
-  background: #fff;
-  margin-top:40px;
-  margin-left: 100px;
-  margin-right: 100px;
-  border: 3px;
-  border-style: solid;
+  width: 90%;
+  background: #eeeeee;
+  margin: auto;
+  border: solid 5px white;
+  outline: solid 5px #eeeeee;
   margin-bottom: 40px;
-  border-style: solid;
-  border-radius: 8px;
+
+  &:hover {
+    outline: solid 5px #e2e2e2;
+  }
+
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 20px;
+  }
 }
