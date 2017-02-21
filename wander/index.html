@@ -11,46 +11,45 @@ pagination:
 <body>
 <div class="wander-cover"></div>
 <div class="wander-title">
-  <h1> Wander the World</h1>
-  <p> Follow the Wanderings of Wayfaring Workers through posts on this blog. Adventure, Travel, etc etc buzzwords inspirational travel jobs wow, so looks so cool, and the words and stuff arn't bad either. You can do this too! all you have to do is pay $9.99! wow, what a deal!</p>
+  <h1>Wander the World</h1>
+  <p>
+     Follow the Wanderings of Wayfaring Workers through posts on this blog. Adventure, Travel, etc etc buzzwords inspirational travel jobs wow, so looks so cool, and the words and stuff arn't bad either. You can do this too! all you have to do is pay $9.99! wow!
+  </p>
 </div>
 <br>
 
-<div class="wander-body">
-  <ul>
-    {% for post in paginator.posts %}
-      <li>
-        <a href="{{ post.url }}">
-        <div class="wander-article">
-          <div class="wander-image">
-          <img class="wander-image2" src= "{{  site.baseurl }}/{{ post.cover }}">
+<div class="container">
+    <ul>
+      {% for post in paginator.posts %}
+        <li>
+          <a href="{{ post.url }}">
+          <div class="wander-article">
+            <img class="wander-image" src= "{{  site.baseurl }}/{{ post.cover }}">
+             <div class="wander-blurb">
+               <h2>{{ post.title }}</h2>
+               <h3> {{ post.author }} // {{ post.date | date: '%B %d, %Y' }}</h3>
+               <p> {{ post.excerpt }} </p>
+             </div>
            </div>
-           <div class="wander-blurb">
-             <h2>{{ post.title }}</h2>
-             <h3> {{ post.author }} // {{ post.date | date: '%B %d, %Y' }}</h3>
-             <p> {{ post.excerpt }} </p>
-           </div>
-         </div>
-       </a>
-      </li>
-    {% endfor %}
-  </ul>
-
-  {% if paginator.total_pages > 1 %}
-    <ul class="pager">
-        {% if paginator.previous_page %}
-        <li class="previous">
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-chevron-left" aria-hidden="true"></i>  Newer Posts</a>
+         </a>
         </li>
-        {% endif %}
-        {% if paginator.next_page %}
-        <li class="next">
-            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-        </li>
-        {% endif %}
+      {% endfor %}
     </ul>
-    {% endif %}
-</div>
 
+    {% if paginator.total_pages > 1 %}
+      <ul class="pager">
+          {% if paginator.previous_page %}
+          <li class="previous">
+              <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-chevron-left" aria-hidden="true"></i>  Newer Posts</a>
+          </li>
+          {% endif %}
+          {% if paginator.next_page %}
+          <li class="next">
+              <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          </li>
+          {% endif %}
+      </ul>
+      {% endif %}
+</div>
 
 </body>
