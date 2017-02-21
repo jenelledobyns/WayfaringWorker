@@ -3,6 +3,9 @@
 @import "default";
 
 // HEADER //
+.container-1 {
+  padding-bottom: 30px;
+}
 .contact-cover {
   background: url('{{ site.baseurl}}/assets/images/1.jpg') no-repeat center bottom;
   -webkit-background-size: cover;
@@ -16,7 +19,7 @@
   font-size: 44pt;
   color: $black !important;
   text-align: center;
-  line-height: 15pt;
+  line-height: 40pt;
   padding-top: 45px;
   padding-bottom: 35px;
   width: 70%;
@@ -25,32 +28,34 @@
   }
 
   // TEXT & PICTURE //
-   .col-sm-8 p {
- float: left;
-  width: 80%;
-  margin: 0 auto;
-  font-family: $body-font;
-  font-size: 16pt;
-  color: black;
-  text-indent: 50px;
+ .col-sm-7 {
+   p {
+      float: left;
+      margin: 0 auto;
+      font-family: $body-font;
+      font-size: 16pt;
+      color: black;
+      text-indent: 50px;
+  }
 }
-.selfie {
+.col-sm-5 {
+  .selfie {
   margin: 0 auto;
-  height: 400px;
-  width: 400px;
-  float: right;
+  height: 100%;
+  width: 100%;
+  }
 }
-
 // CONTACT FORM //
 .email-container {
+  width: 70%;
+  margin: 0 auto;
   background: #fff;
-  margin: 40 100 40 100px;
   border-style: solid;
-  border: 3px;
   border-radius: 8px;
+  margin-bottom: 50px;
 }
 .email-full {
-  width:70%;
+  width:90%;
   margin: 0 auto;
   padding-top: 40px;
   }
@@ -141,16 +146,4 @@ textarea {
   	width: 100%;
   	float: none;
   }
-}
-
-.email-container {
-  background: #fff;
-  margin-top:40px;
-  margin-left: 100px;
-  margin-right: 100px;
-  border: 3px;
-  border-style: solid;
-  margin-bottom: 40px;
-  border-style: solid;
-  border-radius: 8px;
 }
