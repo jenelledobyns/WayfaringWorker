@@ -14,11 +14,8 @@ layout: page
 <body>
 <!-- HEADER & NAVBAR -->
 <div class="header">
-  <div class="title">
-    <div class="titlecontent">
-      <h1> Wayfaring Worker </h1>
-      <h2>Your guide to a more adventurous lifestyle.</h2>
-    </div>
+  <div class="logo">
+    <img src="{{ site.baseurl }}/assets/images/wwroundlogowhite.png">
   </div>
 </div>
 
@@ -44,10 +41,16 @@ layout: page
       <h2>Subscribe</h2>
       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
     <form class="ajax-form" method="POST" action="http://formspree.io/fisherankney@gmail.com">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-9">
       <input type="text" class="email" name="email" placeholder="Your email address">
-      <div class="form-btn">
-        <input type="submit" class="submit" value="Submit">
+    </div>
+    <div class="col-sm-3">
+        <button type="submit" class="submit btn btn-primary btn-large start">Submit</button>
       </div>
+    </div>
+  </div>
     </form>
     <div class="form-thank-you">
         <h3>Thanks for Subscribing!</h3>
