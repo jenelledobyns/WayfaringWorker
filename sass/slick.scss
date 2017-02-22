@@ -6,7 +6,19 @@
   height: 300px;
   margin: 50 auto;
   margin-bottom: 50px;
-  // overflow: hidden;
+  overflow: visible;
+
+}
+
+.center .slick-center {
+  -moz-transform:scale(1.08);
+  -ms-transform:scale(1.08);
+  -o-transform:scale(1.08);
+  -webkit-transform:scale(1.08);
+  transform:scale(1.08);
+  width: 360px;
+  height: 310px;
+  z-index: 1000;
 
 }
 
