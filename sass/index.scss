@@ -1,53 +1,32 @@
 ---
 ---
 @import "default";
+@import url("font-awesome-4.7.0");
 
-// HEADER //
-.container-1 {
-  padding-bottom: 30px;
-}
+
+// HEADER
 .header {
-  background: url('{{ site.baseurl}}/assets/images/1.jpg') no-repeat center bottom;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  height: 500px;
-  margin-top: -100px;
-  margin-bottom: 50px;
-h1 {
-  font-family: $title-font;
-  font-weight: bold;
-  font-size: 44pt;
-  color: $black !important;
-  text-align: center;
-  line-height: 40pt;
-  padding-top: 45px;
-  padding-bottom: 35px;
-  width: 70%;
-  margin: auto;
-  text-align: center;
+background: url('{{ site.baseurl }}/assets/images/6.jpg') no-repeat center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+height: calc(100vh + 100px);
+margin-top: -100px;
+overflow: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 40px;
+}
+
+.logo {
+  margin-top: 100px;
+  img {
+    width: 200px;
+    height: auto;
   }
 }
 
-  // TEXT & PICTURE //
- .col-sm-7 {
-   p {
-      float: left;
-      margin: 0 auto;
-      font-family: $body-font;
-      font-size: 16pt;
-      color: black;
-      text-indent: 50px;
-  }
-}
-.col-sm-5 {
-  .selfie {
-  margin: 0 auto;
-  height: 100%;
-  width: 100%;
-  }
-}
-
-// subscribe bar
+// SUBSCRIBE BAR
 
 .email-container {
 width: 90%;
@@ -81,12 +60,6 @@ p {
   font-size: 14pt;
 }
 
-.container-fluid {
-    margin: 30px 10px 20px 10px;
-  }
-}
-
-
 
 .start {
   font-family: 'Couture', sans-serif !important;
@@ -99,6 +72,7 @@ p {
   color: #777 !important;
   border: 4px solid #777;
   outline: none;
+   height: 46px;
   &:hover {
     color: #626262 !important;
     border: 4px solid #626262;
@@ -111,29 +85,20 @@ p {
       }
 }
 
+button,  input,  textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
 *, :after, :before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.ajax-form {
-  width: 100%;
-}
-.ajax-form input {
-  padding: 20px;
-	border: 0;
-  background: #fff;
-  border: 3px solid #fff;
-  outline: none;
-  -webkit-transition: all .25s ease-in-out;
-  -moz-transition: all .25s ease-in-out;
-  -o-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out;
-  height: 40px;
-  margin-bottom: 20px;
-}
-
+.ajax-form { width: 100%; }
+.ajax-form input,
 .ajax-form textarea {
 	padding: 20px;
 	border: 0;
@@ -144,9 +109,7 @@ p {
   -moz-transition: all .25s ease-in-out;
   -o-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
-  height: 200px;
-  width: 90%;
-  margin-bottom: 20px;
+  height: 40px;
 }
 .ajax-form input:focus,
 .ajax-form textarea:focus {
@@ -174,5 +137,87 @@ p {
 .container-fluid {
     margin: 30px 10px 20px 10px;
   }
+}
 
 .name, .email { width: 90%; }
+
+
+// TOP ARTICLES SLIDER
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  font-size: 30pt;
+  text-transform: uppercase;
+  color: $black !important;
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+// WORK
+
+
+// FROM THE BLOG
+.wander-body {
+  text-align: center;
+  margin: auto;
+  width: 75%;
+}
+
+.wander-article {
+  padding-bottom:40px;
+  opacity:0.9;
+  &:hover {
+    opacity:1;
+  }
+}
+
+a {
+  display: block;
+ &:hover {
+   text-decoration: none !important;
+ }
+}
+
+.wander-image2 {
+  overflow:hidden;
+  width:100%;
+  height:600px;
+}
+
+.wander-blurb > h2 {
+  font-family: $title-font;
+  font-weight: 100;
+  color: $black !important;
+  line-height: -20px ;
+  font-size: 44px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.wander-blurb > h3 {
+  font-family: $body-font;
+  font-weight: 100;
+  color: $black !important;
+  line-height: -20px;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 0px;
+  margin-top: 5px;
+}
+
+.wander-blurb > p {
+  font-family: $body-font;
+  font-weight: 100;
+  color: $black !important;
+  line-height: -20px;
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+ul {
+  list-style-type: none;
+}

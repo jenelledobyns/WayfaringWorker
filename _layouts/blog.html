@@ -23,31 +23,24 @@
 
 {% include navbar.html %}
 
-<!-- Header -->
-<div class="cover">
-  <img class="cover-image" src= "{{ site.baseurl }}/{{ page.cover}}" alt="cover">
+<div class="header" style="background: url('{{ site.baseurl }}/{{page.cover}}') no-repeat center center;-webkit-background-size: cover;
+    -moz-background-size: cover;
+    height: calc(100vh + 100px);
+    margin-top: -100px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;)">
+  <div class="logo">
+    <img src="{{ site.baseurl }}/assets/images/wwroundlogowhite.png">
+  </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <h2 class="post-title">{{ page.title }}</h2>
 <h3 class="post-subtitle"> {{ page.author }} // {{ page.date | date: '%B %d, %Y' }} </h3>
 
-<!-- Content -->
-    {{ content }}
-
-<!-- Related Posts -->
+  {{ content }}
 
 <div class="related">
   <h1>Related Posts</h1>

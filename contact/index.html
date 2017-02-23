@@ -1,0 +1,58 @@
+---
+layout: page
+---
+
+<head>
+  <link rel="stylesheet" href="{{ site.baseurl }}/sass/contact.css">
+</head>
+
+<body>
+
+
+  <div class="header">
+    <h1> Contact </h1>
+  </div>
+
+  <div class="container container-1">
+    <div class="row">
+      <div class="col-sm-7">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+           laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+           velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+           sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+           adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+        </p>
+      </div>
+     <div class="col-sm-5">
+       <img class="selfie" src="{{ site.baseurl }}/assets/images/1.jpg">
+     </div>
+    </div>
+  </div>
+
+<div class="email-container">
+  <div class="email-full">
+    <h2>Send me a message!</h2>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      <form class="ajax-form" method="POST" action="http://formspree.io/fisherankney@gmail.com">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-9">
+              <input type="text" class="name" name="name" placeholder="Your name">
+              <input type="text" class="email" name="email" placeholder="Your email address">
+              <textarea class="message" name="message" placeholder="your message"></textarea>
+            </div>
+            <div class="col-sm-3">
+              <button type="submit" class="submit btn btn-primary btn-large start">Submit</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    <div class="form-thank-you">
+      <h3>Thanks for Subscribing!</h3>
+    </div>
+  </div>
+</div>
+
+
+</body>

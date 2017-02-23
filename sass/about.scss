@@ -85,3 +85,118 @@ padding-bottom: 15px;
   margin: 0 auto;
   padding-bottom: 15px;
 }
+
+// subscribe bar
+
+.email-container {
+width: 90%;
+max-width: 1000px;
+background: #eeeeee;
+margin: auto;
+border: solid 5px white;
+outline: solid 5px #eeeeee;
+margin-bottom: 40px;
+&:hover {
+  outline: solid 5px #e2e2e2;
+  }
+
+.email-full {
+width: 80%;
+margin: 0 auto;
+padding: 20px;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+p {
+  margin: 20px;
+  font-family: $body-font;
+  font-weight: 100;
+  color: #777 !important;
+  font-size: 14pt;
+}
+
+
+.start {
+  font-family: 'Couture', sans-serif !important;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 11px 20px 11px 20px;
+  border-radius: 0;
+  text-align: center;
+  background: transparent !important;
+  color: #777 !important;
+  border: 4px solid #777;
+  outline: none;
+   height: 46px;
+  &:hover {
+    color: #626262 !important;
+    border: 4px solid #626262;
+    outline: none;
+  }
+  &:focus {
+    color: #626262 !important;
+    border: 4px solid #626262;
+    outline: none;
+      }
+}
+
+button,  input,  textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+*, :after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.ajax-form { width: 100%; }
+.ajax-form input,
+.ajax-form textarea {
+	padding: 20px;
+	border: 0;
+  background: #fff;
+  border: 3px solid #fff;
+  outline: none;
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+  height: 40px;
+}
+.ajax-form input:focus,
+.ajax-form textarea:focus {
+	border: 4px solid #e2e2e2;
+  color: #424651;
+}
+
+.error { border: 3px solid #ED1941 !important; }
+
+.form-thank-you {
+  	display: none;
+  	width: 100%;
+  	text-align: center;
+}
+
+.form-thank-you h3 { padding-top: 15px; }
+
+@media (max-width: 577px) {
+  .name, .email {
+  	width: 100%;
+  	float: none;
+  }
+}
+
+.container-fluid {
+    margin: 30px 10px 20px 10px;
+  }
+}
+
+.name, .email { width: 90%; }
