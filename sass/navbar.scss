@@ -38,23 +38,25 @@
 }
 .navbar-brand-centered {
     position: absolute;
-    left: calc(50% - 40px);
+    left: calc(50% - 50px);
     display: block;
     width: 100px;
     text-align: center;
-    font-size: 22px !important;
     opacity: 0;
+    margin: 0 !important;
+    padding: 0 !important;
 
 }
 
 .navbar-brand-centered.fixed-theme {
     position: absolute;
-    left: calc(50% - 40px);
+    left: calc(50% - 50px);
     display: block;
     width: 100px;
     text-align: center;
-    font-size: 22px !important;
     opacity: 1;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 // .navbar>.container .navbar-brand-centered,
