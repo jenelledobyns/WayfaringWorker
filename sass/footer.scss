@@ -17,16 +17,29 @@
 .footer h3 {
   font-face: "Roboto", sans-serif !important;
   font-size: 20pt;
+  font-weight: 100;
+  text-transform: uppercase;
 }
 .fa {
   color: #fff;
   padding-right: 15px;
   float: left;
+
+  &:hover {
+    color: #d2d2d2 !important;
+  }
+}
+
+.search {
+  text-align: right;
 }
 
 
+
+
+
 .footer input[type="text"] {
-    width: 250px;
+    width: 100%;
     height: 36px;
     padding: 5px 30px 5px 8px;
     font-size: 12pt;
@@ -37,22 +50,28 @@
     overflow: auto;
     float:right;
 &:focus {
-  background: #ededed;
+  background: #d2d2d2;
   outline: none;
 }
 
 }
 
 .footer button[type="submit"] {
-    margin-left: 10px;
+    right: 0;
     height: 36px;
-    width: 36px;
+    width: 100%;
     background: transparent;
     color: white;
     vertical-align: center;
-    text-align: center;
+    text-align: right;
     border: 0 !important;
-    //-webkit-appearance: none;
+    font-size: 22px;
+    padding-right: 10px;
+    &:focus {
+      color: #d2d2d2;
+      outline: none;
+    }
+
 }
 .copyright  {
   text-align: center;
@@ -66,11 +85,12 @@
     font-family: 'Martel', serif !important;
     color: #c6c6c6 !important;
 }
-.col-sm-6.col-sm-4.col-sm-2 {
 
-  padding: 0;
-}
 
 .row {
   padding: 0px !important;
+}
+
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4 {
+  padding: 0 !important;
 }

@@ -1,0 +1,288 @@
+---
+---
+@import "default";
+@import url("font-awesome-4.7.0");
+
+
+// HEADER STYLES
+.header {
+background: url('{{ site.baseurl }}/assets/images/6.jpg') no-repeat center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+height: calc(100vh + 100px);
+margin-top: -100px;
+overflow: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 40px;
+}
+
+.logo {
+  margin-top: 100px;
+  img {
+    width: 200px;
+    height: auto;
+  }
+
+}
+
+
+
+//  START / SUBSCRIBE ROW
+
+
+
+
+
+  .start {
+    font-family: 'Couture', sans-serif !important;
+    text-transform: uppercase;
+    // letter-spacing: 1px;
+    font-size: 16px;
+    // line-height: 16px;
+    padding: 0 20px 0 20px;
+    display: table-cell;
+    vertical-align: middle !important;
+    border-radius: 0;
+    text-align: center;
+    background: transparent !important;
+    color: #777 !important;
+    border: 4px solid #777;
+    outline: none;
+     height: 46px;
+    &:hover {
+      color: #626262 !important;
+      border: 4px solid #626262;
+      outline: none;
+    }
+    &:focus {
+      color: #626262 !important;
+      border: 4px solid #626262;
+      outline: none;
+        }
+
+
+  }
+
+
+
+
+
+
+// TOP ARTICLES SLIDER
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  font-size: 30pt;
+  text-transform: uppercase;
+  color: $black !important;
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+// WORK
+
+
+
+
+
+
+// FROM THE BLOG
+.wander-body {
+  text-align: center;
+  margin: auto;
+  width: 75%;
+}
+
+.wander-article {
+  padding-bottom:40px;
+  opacity:0.9;
+  &:hover {
+    opacity:1;
+  }
+}
+
+a {
+  display: block;
+ &:hover {
+   text-decoration: none !important;
+ }
+}
+
+.wander-image2 {
+  overflow:hidden;
+  width:100%;
+  height:600px;
+}
+
+.wander-blurb > h2 {
+  font-family: $title-font;
+  font-weight: 100;
+  color: $black !important;
+  line-height: -20px ;
+  font-size: 44px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.wander-blurb > h3 {
+  font-family: $body-font;
+  font-weight: 100;
+  color: $black !important;
+  line-height: -20px;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 0px;
+  margin-top: 5px;
+}
+
+.wander-blurb > p {
+  font-family: $body-font;
+  font-weight: 100;
+  color: $black !important;
+  line-height: -20px;
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+
+
+.email-full {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  }
+/* Normalize & Reset */
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    color: #777;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
+}
+
+button,
+input,
+textarea {
+    color: inherit; /* 1 */
+    font: inherit; /* 2 */
+    margin: 0; /* 3 */
+}
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Form Styles */
+
+.ajax-form { width: 100%; }
+.ajax-form input,
+.ajax-form textarea {
+  	padding: 20px;
+  	border: 0;
+    background: #fff;
+    border: 3px solid #fff;
+
+    outline: none;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    height: 40px;
+}
+.ajax-form input:focus,
+.ajax-form textarea:focus {
+  	border: 4px solid #e2e2e2;
+    color: #424651;
+}
+
+.ajax-form input[type="submit"] {
+    border: 3px solid #4c4c4c;
+	  color: #fff;
+    padding: 20px;
+    background-color: #4c4c4c;
+
+}
+
+.ajax-form input[type="submit"]:hover {
+  	background-color: #4c4c4c;
+    border: 3px solid #4c4c4c;
+    color: white;
+}
+
+.name, .email { width: 90%; }
+
+// .name { float: left; }
+// .email { float: right }
+
+.message {
+  width: 100%;
+
+}
+
+.form-btn {
+  text-align: center;
+  padding: 10px;
+}
+
+.error { border: 3px solid #ED1941 !important; }
+
+.form-thank-you {
+  	display: none;
+  	width: 100%;
+  	text-align: center;
+}
+
+.form-thank-you h3 { padding-top: 15px; }
+
+@media (max-width: 577px) {
+  .name, .email {
+  	width: 100%;
+  	float: none;
+  }
+}
+
+.email-container {
+  width: 90%;
+  background: #eeeeee;
+  margin: auto;
+  border: solid 5px white;
+  outline: solid 5px #eeeeee;
+  margin-bottom: 40px;
+
+  &:hover {
+    outline: solid 5px #e2e2e2;
+
+
+    }
+
+
+  h2 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-weight: bold;
+
+  }
+
+  p {
+    margin: 20px;
+  }
+
+  .container-fluid {
+    margin: 30px 10px 20px 10px;
+  }
+}
