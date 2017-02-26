@@ -158,11 +158,19 @@ h1 {
 // WORK
 
 
+
+
 // FROM THE BLOG
+
+
 .wander-body {
   text-align: center;
   margin: auto;
   width: 75%;
+  
+  ul {
+  padding: 0 !important;
+  }
 }
 
 .wander-article {

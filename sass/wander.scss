@@ -18,25 +18,48 @@
 
 // Wander Page CSS
 
-.wander-cover {
-  background: url('{{ site.baseurl}}/assets/images/1.jpg') no-repeat center bottom;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  height: 300px;
-  margin-top: -100px;
+.new-header {
+background: url('{{ site.baseurl }}/assets/images/4.jpg') no-repeat center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+height: calc(40vh + 100px);
+margin-top: -100px;
+overflow: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 40px;
+ h1 {
+    padding-top: 100px;
+    padding-bottom: 0px;
+    font-family: $title-font;
+    font-weight: bold;
+    font-size: 44pt;
+    color: white !important;
+    text-align: center;
+    line-height: 40pt;
+    text-align: center;
+  }
 }
-.wander-title h1 {
-  font-family: $title-font;
-  font-weight: bold;
-  font-size: 44pt;
-  color: $black !important;
-  text-align: center;
-  line-height: 15pt;
-  padding-top: 45px;
-  padding-bottom: 35px;
-  width: 70%;
-  margin: auto;
-}
+// .wander-cover {
+//   background: url('{{ site.baseurl}}/assets/images/1.jpg') no-repeat center bottom;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   height: 300px;
+//   margin-top: -100px;
+// }
+// .wander-title h1 {
+//   font-family: $title-font;
+//   font-weight: bold;
+//   font-size: 44pt;
+//   color: $black !important;
+//   text-align: center;
+//   line-height: 15pt;
+//   padding-top: 45px;
+//   padding-bottom: 35px;
+//   width: 70%;
+//   margin: auto;
+// }
 .wander-title p {
   font-family: $body-font;
   color: $body-color;
@@ -49,11 +72,16 @@
   margin: auto;
   text-align: center;
 }
+
 .wander-body {
   text-align: center;
   margin: auto;
   width: 75%;
+  ul {
+  padding-left:0;
+  }
 }
+
 .wander-article {
   padding-bottom:40px;
   opacity:0.9;
@@ -61,6 +89,7 @@
     opacity:1;
   }
 }
+
 a {
   display: block;
  &:hover {
