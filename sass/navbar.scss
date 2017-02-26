@@ -36,17 +36,26 @@
     font-size: 24px;
     color: #fff;
 }
-
 .navbar-brand-centered {
     position: absolute;
-    left: calc(50% - 50px);
+    left: calc(50% - 40px);
     display: block;
     width: 100px;
     text-align: center;
-    display: none;
+    font-size: 22px !important;
+    opacity: 0;
 
 }
 
+.navbar-brand-centered.fixed-theme {
+    position: absolute;
+    left: calc(50% - 40px);
+    display: block;
+    width: 100px;
+    text-align: center;
+    font-size: 22px !important;
+    opacity: 1;
+}
 
 // .navbar>.container .navbar-brand-centered,
 //  .navbar>.container-fluid .navbar-brand-centered {
@@ -98,10 +107,10 @@ ul.nav a {
 
 }
 
-.navbar-brand.fixed-theme,
+.navbar-brand-centered.fixed-theme,
 .navbar-container.fixed-theme,
 .navbar.navbar-fixed-top.fixed-theme,
-.navbar-brand,
+.navbar-brand-centered,
 .navbar-container{
     transition: 0.8s;
     -webkit-transition:  0.8s;
