@@ -47,7 +47,6 @@ margin-bottom: 40px;
     color: $black !important;
     line-height: -20px ;
     font-size: 44px;
-    text-transform: uppercase;
     text-align: left;
     margin-top: 10px;
   }
@@ -56,12 +55,12 @@ margin-bottom: 40px;
     font-family:$body-font;
     margin: 0 auto;
     padding-bottom: 15px;
-    .link-to-next {
+  }
+  .link-to-next {
       font-weight:bold;
       text-align:center;
       padding-top: 15px;
       padding-bottom: 50px;
-    }
   }
   .italic {
     font-size: 16pt;

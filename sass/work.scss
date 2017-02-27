@@ -12,14 +12,42 @@
   $button2-color: #8d8d8d;
   $form-color: #dcdcdc;
 
+
+
 .header {
 background: url('{{ site.baseurl }}/assets/images/3.jpg') no-repeat center center;
 -webkit-background-size: cover;
 -moz-background-size: cover;
-height: 300px;
-// box-shadow: 0px 0px 60px #6d6d6d;
+height: calc(40vh + 100px);
 margin-top: -100px;
+overflow: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 40px;
+ h1 {
+    padding-top: 100px;
+    padding-bottom: 0px;
+    font-family: $title-font;
+    font-weight: bold;
+    font-size: 44pt;
+    color: white !important;
+    text-align: center;
+    line-height: 40pt;
+    text-align: center;
+  }
 }
+
+
+
+// .header {
+// background: url('{{ site.baseurl }}/assets/images/3.jpg') no-repeat center center;
+// -webkit-background-size: cover;
+// -moz-background-size: cover;
+// height: 300px;
+// // box-shadow: 0px 0px 60px #6d6d6d;
+// margin-top: -100px;
+// }
 
 .content {
   .container {
