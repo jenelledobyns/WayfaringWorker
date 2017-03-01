@@ -71,115 +71,13 @@ margin-bottom: 40px;
 
 
   }
-}
-
-.email-full {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-
-  h2 {
-    font-family: "Roboto", sans-serif;
-    text-align: center;
-    font-weight: bold;
-  }
-  p {
-    margin: 20px;
-  }
-}
-
-.container-fluid {
-  margin: 30px 10px 20px 10px;
-}
-
-button,
-input,
-textarea {
-    color: inherit; /* 1 */
-    font: inherit; /* 2 */
-    margin: 0; /* 3 */
-}
-
-*, :after, :before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.ajax-form {
-  width: 100%;
-}
-
-.ajax-form input,
-.ajax-form textarea {
-    padding: 20px;
-    border: 0;
-    background: #fff;
-    border: 3px solid #fff;
-    outline: none;
-    -webkit-transition: all .25s ease-in-out;
-    -moz-transition: all .25s ease-in-out;
-    -o-transition: all .25s ease-in-out;
-    transition: all .25s ease-in-out;
-    height: 40px;
-}
-
-.ajax-form input:focus,
-.ajax-form textarea:focus {
-    border: 4px solid #e2e2e2;
-    color: #424651;
-}
-
-.ajax-form input[type="submit"] {
-    border: 3px solid #4c4c4c;
-    color: #fff;
-    padding: 20px;
-    background-color: #4c4c4c;
-
-}
-
-.ajax-form input[type="submit"]:hover {
-    background-color: #4c4c4c;
-    border: 3px solid #4c4c4c;
-    color: white;
-}
 
 
-.name, .email {
-  width: 90%;
-}
-
-.message {
-  width: 100%;
-}
-
-.form-btn {
-  text-align: center;
-  padding: 10px;
-}
-
-.error {
-  border: 3px solid #ED1941 !important;
-}
-
-.form-thank-you {
-    display: none;
-    width: 100%;
-    text-align: center;
-}
-
-.form-thank-you h3 { padding-top: 15px; }
-
-@media (max-width: 577px) {
-  .name, .email {
-    width: 100%;
-    float: none;
-  }
-}
 
 
-// TOP ARTICLES
 
+
+// TOP ARTICLES SLIDER
 
 h1 {
   font-family: "Roboto", sans-serif;
@@ -190,6 +88,7 @@ h1 {
   text-align: center;
   padding-top: 20px;
 }
+
 // SLIDER
 
 //FONTS
@@ -332,7 +231,6 @@ $zoom-slow: all, 2.4s,  cubic-bezier(.55,0,.1,1);
 	-ms-flex-align: center;
 	-webkit-align-items: center;
 	-webkit-box-align: center;
-
 	align-items: center;
 
   .title {
@@ -542,9 +440,7 @@ $zoom-slow: all, 2.4s,  cubic-bezier(.55,0,.1,1);
 }
 
 
-
 // WORK
-
 
 .work {
 margin: 0 auto;
@@ -558,6 +454,102 @@ margin: 0 auto;
   outline: solid 5px white;
   outline-offset: -10px;
 }
+
+
+
+.container-fluid {
+  margin: 30px 10px 20px 10px;
+}
+
+button,
+input,
+textarea {
+    color: inherit; /* 1 */
+    font: inherit; /* 2 */
+    margin: 0; /* 3 */
+}
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ajax-form {
+  width: 100%;
+}
+
+.ajax-form input,
+.ajax-form textarea {
+    padding: 20px;
+    border: 0;
+    background: #fff;
+    border: 3px solid #fff;
+    outline: none;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    height: 40px;
+}
+
+.ajax-form input:focus,
+.ajax-form textarea:focus {
+    border: 4px solid #e2e2e2;
+    color: #424651;
+}
+
+.ajax-form input[type="submit"] {
+    border: 3px solid #4c4c4c;
+    color: #fff;
+    padding: 20px;
+    background-color: #4c4c4c;
+
+}
+
+.ajax-form input[type="submit"]:hover {
+    background-color: #4c4c4c;
+    border: 3px solid #4c4c4c;
+    color: white;
+}
+
+
+.name, .email {
+  width: 90%;
+}
+
+.message {
+  width: 100%;
+}
+
+.form-btn {
+  text-align: center;
+  padding: 10px;
+}
+
+.error {
+  border: 3px solid #ED1941 !important;
+}
+
+.form-thank-you {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+.form-thank-you h3 { padding-top: 15px; }
+
+@media (max-width: 577px) {
+  .name, .email {
+    width: 100%;
+    float: none;
+  }
+}
+
+
+
+
+
 
 
 // FROM THE BLOG
