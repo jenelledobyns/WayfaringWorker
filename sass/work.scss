@@ -46,29 +46,27 @@ margin-bottom: 40px;
 
 // // Sidebar
 
-.panel-group {
-  float: right; 
-}
-
 .panel-heading {
-  height: 50px;
-  width: 100%;
-  margin: 0;
-  padding-left: 20px;
-  &:hover {
-    background-color: #e0e0e0;
-  }
-  .panel-title {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18pt;
-    font-weight: bold;
-    color: $black !important;
+height: 50px;
+width: 100%;
+margin: 0;
+padding-left: 20px;
+&:hover {
+  background-color: #e0e0e0;
+}
+.panel-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18pt;
+  font-weight: bold;
+  color: $black !important;
+  a:hover {
+    text-decoration: none;
+    }
   }
 }
 
-a {
-  font-color: $black;
-  text-decoration: none;
+a:-webkit-any-link{
+text-decoration:none !important;
 }
 
 .list-group {

@@ -109,16 +109,14 @@ layout: page
 
 <!-- BLAG -->
 <h1>From the Blog</h1>
-<div class="wander-body">
+<div class="wander">
   <ul>
     {% for post in site.posts limit:4 %}
       <li>
         <a href="{{ post.url }}">
-        <div class="wander-article">
-          <div class="wander-image">
-          <img class="wander-image2" src= "{{  site.baseurl }}/{{ post.cover }}">
-           </div>
-           <div class="wander-blurb">
+        <div class="article">
+          <img class="article-image" src= "{{  site.baseurl }}/{{ post.cover }}">
+           <div class="article-blurb">
              <h2>{{ post.title }}</h2>
              <h3> {{ post.author }} // {{ post.date | date: '%B %d, %Y' }}</h3>
              <p> {{ post.excerpt }} </p>
@@ -131,6 +129,6 @@ layout: page
 </div>
 
 </div>
-
+ 
 
 </body>
