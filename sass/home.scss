@@ -105,19 +105,19 @@ justify-content: center;
     vertical-align: middle !important;
     border-radius: 0;
     text-align: center;
-    background: transparent !important;
-    color: #777 !important;
-    border: 4px solid #777;
+    background-color: #626262 !important;
+    color: white !important;
+    border: none;
     outline: none;
      height: 46px;
     &:hover {
-      color: #626262 !important;
-      border: 4px solid #626262;
+      background-color: #515151 !important;
+      // border: 4px solid #626262;
       outline: none;
     }
     &:focus {
-      color: #626262 !important;
-      border: 4px solid #626262;
+      color: #515151 !important;
+      border: none;
       outline: none;
         }
 
@@ -128,7 +128,10 @@ justify-content: center;
 
 
 
-
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
 
 
 // H1 MAIN PAGE
@@ -276,8 +279,8 @@ $zoom-slow: all, 2.4s,  cubic-bezier(.55,0,.1,1);
 
 //SLIDER STUFF
 .slider-wrapper {
-  width: 100vw;
-  height: 100vh;
+  width: 80vw;
+  height: 60vh;
   display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
@@ -289,13 +292,13 @@ $zoom-slow: all, 2.4s,  cubic-bezier(.55,0,.1,1);
 	align-items: center;
 
   .title {
-    width: 100%;
+    width: 80vw;
   }
 }
 
 .slider--item {
-  width: 100vw;
-  height: 55vh;
+  width: 80vw;
+  height: 45vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -304,8 +307,8 @@ $zoom-slow: all, 2.4s,  cubic-bezier(.55,0,.1,1);
   position: relative;
   outline: none;
   z-index: 1;
-  width: 100vw;
-  height: 55vh;
+  width: 80vw;
+  height: 45vh;
 
 
 
@@ -316,14 +319,37 @@ $zoom-slow: all, 2.4s,  cubic-bezier(.55,0,.1,1);
 }
 
 .slick-slider .slick-track, .slick-slider .slick-list {
-  width: 100vw;
-  height: 55vh;
+  width: 80vw;
+  height: 45vh;
   padding: 0 !important;
 
 
+  .overlay {
+    background-color: rgba(90,90,90,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &:hover {
+      opacity: 1;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+}
+
+
   .caption {
-    width: 70vw;
-    height: 55vh;
+    width: 60vw;
+    height: 45vh;
     text-align: center;
     margin: auto;
     color: #fff;
@@ -537,8 +563,6 @@ margin: 0 auto;
 
     &:hover {
       opacity: 1;
-      outline: solid 5px #fff;
-      outline-offset: -10px;
       -webkit-transition: all 0.2s ease-in-out;
       -moz-transition: all 0.2s ease-in-out;
       -o-transition: all 0.2s ease-in-out;
@@ -667,6 +691,7 @@ ul {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
+  text-align: center;
   }
 /* Normalize & Reset */
 
@@ -694,26 +719,32 @@ textarea {
 }
 
 /* Form Styles */
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-.ajax-form { width: 100%; }
+}
+.ajax-form { width: 60%;
+
+}
 .ajax-form input,
 .ajax-form textarea {
   	padding: 20px;
   	border: 0;
-    background: #fff;
-    border: 3px solid #fff;
-
+    background: #eee;
+    border: none;
     outline: none;
-    -webkit-transition: all .25s ease-in-out;
-    -moz-transition: all .25s ease-in-out;
-    -o-transition: all .25s ease-in-out;
-    transition: all .25s ease-in-out;
+    // -webkit-transition: all .25s ease-in-out;
+    // -moz-transition: all .25s ease-in-out;
+    // -o-transition: all .25s ease-in-out;
+    // transition: all .25s ease-in-out;
     height: 40px;
 }
 .ajax-form input:focus,
 .ajax-form textarea:focus {
-  	border: 4px solid #e2e2e2;
-    color: #424651;
+  	background: #ddd;
+    outline: none;
 }
 
 .ajax-form input[type="submit"] {
@@ -768,11 +799,12 @@ textarea {
   font-size: 15pt;
   width: 100%;
   // height: 300px;
-  background: #dddddd;
+  // background: #dddddd;
   margin: auto;
   // border: solid 5px white;
   // outline: solid 5px #eeeeee;
   margin-bottom: 40px;
+  text-align: center;
 
 
 

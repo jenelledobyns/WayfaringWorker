@@ -39,10 +39,10 @@ layout: page
 
 <div class="email-container">
   <div class="email-full">
-    <h2>Welcome to Wayfaring Worker!</h2>
-    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-      <form class="ajax-form" method="POST" action="http://formspree.io/fisherankney@gmail.com">
-        <div class="container-fluid">
+    <h2>Sign up to receive emails from us.</h2>
+    <p> We'll never spam you, and you'll get the latest updates on jobs, articles and blog posts. </p>
+      <div class="container-fluid form-container">
+        <form class="ajax-form" method="POST" action="http://formspree.io/fisherankney@gmail.com">
           <div class="row">
             <div class="col-sm-9">
               <input type="text" class="email" name="email" placeholder="Your email address">
@@ -88,21 +88,23 @@ layout: page
 
 
 
-
-<div class="slider-wrapper">
+<div class="container">
+  <div class="slider-wrapper">
   <div class="title">
   <h1>Top Articles</h1>
 </div>
   <div class="slider">
   <div class="slider--item" style="background-image: url({{ site.baseurl }}/assets/images/6.jpg)">
-    <div class="caption">
-      <div class="maincaption">
-       <h1>Hello world</h1>
-      </div>
+    <div class="overlay">
+      <div class="caption">
+       <div class="maincaption">
+        <h1>Hello world</h1>
+       </div>
     <div class="subcaption">
      <h2>This is a subcaption about the article listed here. It will be an interesting caption to grab attention.</h2>
     </div>
    </div>
+ </div>
 </div>
     <div class="slider--item" style="background-image: url({{ site.baseurl }}/assets/images/2.jpg)">
       <div class="caption">
@@ -135,6 +137,7 @@ layout: page
      </div>
    </div>
   </div>
+</div>
 </div>
 
 
