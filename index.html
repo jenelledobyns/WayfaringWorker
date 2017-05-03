@@ -127,40 +127,43 @@ layout: page
   <div class="container">
         <div class="row">
           <div class="col-xs-18 col-sm-6 col-md-6">
-            <div class="thumbnail">
+            <a href="#">
+              <div class="thumbnail">
               <div class="image">
               <img class="img-responsive" src="{{ site.baseurl }}/assets/images/workthumb1.jpg">
               <div class="overlay">
                 <div class="caption">
-                <h1>Teaching English Abroad</h1>
+                <h1>Teach English</h1>
               </div>
             </div>
               </div>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
-                  <a href="#" class="btn btn-default btn-xs pull-right" role="button"><i class="glyphicon glyphicon-edit"></i></a> <a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a>
             </div>
+          </a>
             </div>
 
           <div class="col-xs-18 col-sm-6 col-md-6">
-            <div class="thumbnail">
+            <a href="#">
+              <div class="thumbnail">
               <div class="image">
               <img class="img-responsive" src="{{ site.baseurl }}/assets/images/workthumb2.jpg">
               <div class="overlay">
                 <div class="caption">
-                <h1>Scuba Diving Instructor</h1>
+                <h1>Scuba Instructor</h1>
               </div>
             </div>
               </div>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
-                  <a href="#" class="btn btn-default btn-xs pull-right" role="button"><i class="glyphicon glyphicon-edit"></i></a> <a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a>
             </div>
+          </a>
           </div>
 
 </div>
 <div class="row">
 
           <div class="col-xs-18 col-sm-6 col-md-6">
-            <div class="thumbnail">
+            <a href="#">
+              <div class="thumbnail">
               <div class="image">
               <img class="img-responsive" src="{{ site.baseurl }}/assets/images/workthumb3.jpg">
                 <div class="overlay">
@@ -170,11 +173,12 @@ layout: page
               </div>
               </div>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
-                  <a href="#" class="btn btn-default btn-xs pull-right" role="button"><i class="glyphicon glyphicon-edit"></i></a> <a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a>
             </div>
+          </a>
           </div>
 
           <div class="col-xs-18 col-sm-6 col-md-6">
+            <a href="#">
             <div class="thumbnail">
               <div class="image">
               <img class="img-responsive" src="{{ site.baseurl }}/assets/images/workthumb4.jpg">
@@ -185,8 +189,8 @@ layout: page
             </div>
               </div>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
-                  <a href="#" class="btn btn-default btn-xs pull-right" role="button"><i class="glyphicon glyphicon-edit"></i></a> <a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a>
             </div>
+          </a>
           </div>
 
 
@@ -197,24 +201,53 @@ layout: page
 
 
 <!-- BLAG -->
-<h1>From the Blog</h1>
 <div class="wander">
-  <ul>
-    {% for post in site.posts limit:4 %}
-      <li>
-        <a href="{{ post.url }}">
-        <div class="article">
-          <img class="article-image" src= "{{  site.baseurl }}/{{ post.cover }}">
+<h1>From the Blog</h1>
+<div class="container">
+  <div class="featured">
+  <div class="row">
+    {% for post in site.posts limit:1 %}
+
+    <a href="{{ post.url }}">
+     <div class="col-md-12">
+       <div class="thumbnail">
+         <div class="image">
+            <img class="img-responsive" src= "{{  site.baseurl }}/{{ post.cover }}">
+          </div>
+          <div class="article-blurb">
+               <h2>{{ post.title }}</h2>
+               <h3> {{ post.author }} / {{ post.date | date: '%B %d, %Y' }}</h3>
+               <p> {{ post.excerpt }} </p>
+             </div>
+           </div>
+         </div>
+         </a>
+         {% endfor %}
+
+  </div>
+</div>
+
+<div class="row match">
+{% for post in site.posts limit:3 offset:1 %}
+
+  <a href="{{ post.url }}">
+   <div class="col-sm-4">
+     <div class="col-md-12">
+     <div class="thumbnail">
+          <img class="img-responsive" src= "{{  site.baseurl }}/{{ post.cover }}">
            <div class="article-blurb">
              <h2>{{ post.title }}</h2>
-             <h3> {{ post.author }} // {{ post.date | date: '%B %d, %Y' }}</h3>
+             <h3> {{ post.author }} / {{ post.date | date: '%B %d, %Y' }}</h3>
              <p> {{ post.excerpt }} </p>
            </div>
          </div>
+       </div>
+       </div>
        </a>
-      </li>
+
     {% endfor %}
-  </ul>
+         </div>
+       </div>
 </div>
 </div>
 </div>
