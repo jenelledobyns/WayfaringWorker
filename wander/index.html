@@ -1,62 +1,102 @@
 ---
-layout: page
-pagination:
-  enabled: true
+layout: wander
+paginate:
+  category: wander
 ---
-<head>
-  <link rel="stylesheet" href="{{ site.baseurl }}/sass/wander.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
-</head>
-
-<body>
-
-<div class="header">
-  <h1> Wander the World </h1>
-</div>
-
 <div class="container">
-  <div class="subtitle">
-    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. 
-    </p>
+  <div class="row sort">
+    <h2>Recent <i class="fa fa-chevron-down" aria-hidden="true"></i></h2>
+  </div>
+  <div class="row">
+    {% for post in paginator.posts limit: 2 %}
+    <a href="{{ post.url }}">
+      <div data-mh="match1" class="col-sm-6">
+        <div data-mh="match1" class="col-md-12">
+        <img class="image img-responsive" src="{{ site.baseurl }}/{{ post.cover }}">
+
+        <h1>{{ post.title }}</h1>
+        <h2> {{ post.author }} // {{ post.date | date: '%B %d, %Y' }}</h2>
+        <p>{{ post.excerpt }}</p>
+
+      </div>
+     </div>
+    </a>
+    {% endfor %}
   </div>
 
-  <div class="body">
-    <ul>
-      {% for post in paginator.posts %}
-        <li>
-          <a href="{{ post.url }}">
-          <div class="article">
-            <img class="article-image" src= "{{ site.baseurl }}/{{ post.cover }}">
-            <div class="article-blurb">
-              <h2>{{ post.title }}</h2>
-              <h3> {{ post.author }} // {{ post.date | date: '%B %d, %Y' }}</h3>
-              <p> {{ post.excerpt }} </p>
-            </div>
-          </div>
-          </a>
+
+
+
+  <div class="row">
+    {% for post in paginator.posts limit: 2 offset: 2 %}
+    <a href="{{ post.url }}">
+      <div class="col-sm-6">
+        <div data-mh="match2" class="col-md-12">
+        <img class="image" src="{{ site.baseurl }}/{{ post.cover }}">
+
+        <h1>{{ post.title }}</h1>
+        <h2> {{ post.author }} // {{ post.date | date: '%B %d, %Y' }}</h2>
+        <p>{{ post.excerpt }}</p>
+      </div>
+        </div>
+    </a>
+    {% endfor %}
+  </div>
+
+
+
+
+  <div class="row">
+    {% for post in paginator.posts limit: 2 offset: 4 %}
+    <a href="{{ post.url }}">
+      <div class="col-sm-6">
+        <div data-mh="match3" class="col-md-12">
+
+        <img class="image" src="{{ site.baseurl }}/{{ post.cover }}">
+
+        <h1>{{ post.title }}</h1>
+        <h2> {{ post.author }} // {{ post.date | date: '%B %d, %Y' }}</h2>
+        <p>{{ post.excerpt }}</p>
+      </div>
+        </div>
+    </a>
+    {% endfor %}
+  </div>
+
+
+
+
+  <div class="row">
+    {% for post in paginator.posts limit: 2 offset: 6 %}
+    <a href="{{ post.url }}">
+      <div class="col-sm-6">
+        <div data-mh="match4" class="col-md-12">
+
+        <img class="image" src="{{ site.baseurl }}/{{ post.cover }}">
+
+        <h1>{{ post.title }}</h1>
+        <h2> {{ post.author }} // {{ post.date | date: '%B %d, %Y' }}</h2>
+        <p>{{ post.excerpt }}</p>
+      </div>
+        </div>
+    </a>
+    {% endfor %}
+  </div>
+
+
+
+  {% if paginator.total_pages > 1 %}
+    <ul class="pager">
+        {% if paginator.previous_page %}
+        <li class="previous">
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-chevron-left" aria-hidden="true"></i>Previous</a>
         </li>
-      {% endfor %}
+        {% endif %}
+        {% if paginator.next_page %}
+        <li class="next">
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        </li>
+        {% endif %}
     </ul>
-
-
-    {% if paginator.total_pages > 1 %}
-      <ul class="pager">
-          {% if paginator.previous_page %}
-          <li class="previous">
-              <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-chevron-left" aria-hidden="true"></i>  Newer Posts</a>
-          </li>
-          {% endif %}
-          {% if paginator.next_page %}
-          <li class="next">
-              <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-          </li>
-          {% endif %}
-      </ul>
-      {% endif %}
-  </div>
+    {% endif %}
 </div>
-
-</body>

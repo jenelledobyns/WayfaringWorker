@@ -1,17 +1,7 @@
 ---
 ---
+
 @import "default";
-@import url("font-awesome-4.7.0");
-
-@font-face {
-  font-family: Vendetta;
-  src: url('{{ site.baseurl }}/assets/fonts/vendetta.otf');
-}
-
-@font-face {
-  font-family: Venetian;
-  src: url('{{ site.baseurl }}/assets/fonts/venetian.otf');
-}
 
 
 body {
@@ -78,7 +68,7 @@ justify-content: center;
 
 
 .getstarted {
-  font-family: 'COUTUREBold', sans-serif !important;
+  font-family: 'Couture', sans-serif !important;
   font-weight: 900;
   text-transform: uppercase;
   // letter-spacing: 1px;
@@ -378,7 +368,6 @@ margin: 0 auto;
      text-align: center;
      overflow: hidden;
      width: 100%;
-     height: 100%;
      position: relative;
    }
 .image {
@@ -390,38 +379,7 @@ margin: 0 auto;
    img {
      width: 100%;
    }
-   .article-blurb {
-     margin: 0;
-     padding: 0;
 
-     h2 {
-       font-family: 'Roboto', sans-serif;
-       text-transform: uppercase;
-       letter-spacing: -1px;
-       font-weight: 100;
-       color: $black;
-       font-size: 38pt;
-       line-height: 22px;
-       }
-     h3 {
-       font-family: 'Roboto', sans-serif;
-       text-transform: uppercase;
-       letter-spacing: 2px;
-       font-weight: 400;
-       color: $body-color !important;
-       line-height: -10px;
-       font-size: 18pt;
-       text-align: center;
-       padding-top: 0px;
-       margin-top: 5px;
-     }
-     p {
-       font-family: 'Martel', serif;
-       color: $black;
-       font-size: 14pt;
-       margin: 0px 10px 20px 10px;
-     }
-   }
 
    .col-md-12 {
      border: 0 !important;
@@ -444,8 +402,7 @@ margin: 0 auto;
 
 .article-blurb {
   margin: 0;
-  padding: 0;
-  height: 100%;
+  padding: 4px;
 
   h2 {
     font-family: 'Roboto', sans-serif;
@@ -460,7 +417,7 @@ margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: 400;
+    font-weight: 600;
     color: $body-color !important;
     line-height: -10px;
     font-size: 12pt;
@@ -480,8 +437,7 @@ margin: 0 auto;
   border: 0 !important;
   border-radius: 0 !important;
   text-align: center;
-  // margin: 10px;
-  // width: calc(33.33% - 21px);
+
 
 }
   .row {
@@ -489,18 +445,6 @@ margin: 0 auto;
   margin-bottom: 30px;
   margin: 0 auto;
 }
-
-// .row.match {
-//     overflow: hidden;
-// }
-//
-// .row.match [class*="col-"]{
-//     margin-bottom: -99999px;
-//     padding-bottom: 99999px;
-//
-// }
-
-/* Make equal height with table styles */
 
 
 

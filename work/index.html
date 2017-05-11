@@ -1,114 +1,102 @@
 ---
-layout: page
+layout: work
+paginate:
+  category: work
 ---
-<head>
-<link rel="stylesheet" href="{{ site.baseurl }}/sass/work.css">
-<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-</head>
-
-<body>
-
-<div class="header">
-  <h1> Adventurous Jobs </h1>
-</div>
-
-
-
 <div class="container">
-    <div class="row">
+  <div class="row sort">
+    <h2>Recent <i class="fa fa-chevron-down" aria-hidden="true"></i></h2>
+  </div>
+  <div class="row">
+    {% for post in paginator.posts limit: 2 %}
+    <a href="{{ post.url }}">
+      <div data-mh="match1" class="col-sm-6">
+        <div data-mh="match1" class="col-md-12">
+        <img class="image img-responsive" src="{{ site.baseurl }}/{{ post.cover }}">
 
-        <div class="col-sm-4 col-sm-push-8">
+        <h1>{{ post.title }}</h1>
+        <h2> {{ post.author }} // {{ post.date | date: '%B %d, %Y' }}</h2>
+        <p>{{ post.excerpt }}</p>
 
-            <div class="panel-group">
-                <div class="panel panel-default">
-
-                    <a data-toggle="collapse" href="#collapse1">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                             Work Option 1<i class="fa fa-chevron-right"></i>
-                            </h4>
-                        </div>
-                    </a>
-                    <div id="collapse1" class="panel-collapse collapse">
-                        <ul class="list-group">
-                            <li class="list-group-item">One</li>
-                            <li class="list-group-item">Two</li>
-                            <li class="list-group-item">Three</li>
-                        </ul>
-                    </div>
-
-                    <a data-toggle="collapse" href="#collapse2">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                            Work Option 2<i class="fa fa-chevron-right"></i>
-                            </h4>
-                        </div>
-                    </a>
-                    <div id="collapse2" class="panel-collapse collapse">
-                        <ul class="list-group">
-                            <li class="list-group-item">One</li>
-                            <li class="list-group-item">Two</li>
-                            <li class="list-group-item">Three</li>
-                        </ul>
-                    </div>
-
-                    <a data-toggle="collapse" href="#collapse3">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                            Work Option 3<i class="fa fa-chevron-right"></i>
-                            </h4>
-                        </div>
-                    </a>
-                    <div id="collapse3" class="panel-collapse collapse">
-                        <ul class="list-group">
-                            <li class="list-group-item">One</li>
-                            <li class="list-group-item">Two</li>
-                            <li class="list-group-item">Three</li>
-                        </ul>
-                    </div>
-
-                    <a data-toggle="collapse" href="#collapse4">
-                        <div class="panel-heading">
-                            <h4 class="panel-title"> 
-                              Work Option 4<i class="fa fa-chevron-right"></i>
-                            </h4> 
-                        </div>
-                    </a>
-                    <div id="collapse4" class="panel-collapse collapse">
-                        <ul class="list-group">
-                            <li class="list-group-item">One</li>
-                            <li class="list-group-item">Two</li>
-                            <li class="list-group-item">Three</li>
-                        </ul>
-                    </div>
-                </div>
-
-                </div>
-            </div>
-        
-
-    <script>
-        $('.panel-title').click(function() {
-            $(this).find('i').toggleClass('fa-chevron-right fa-chevron-down')
-        });
-    </script>
+      </div>
+     </div>
+    </a>
+    {% endfor %}
+  </div>
 
 
-        <div class="content col-sm-8 col-sm-pull-4">
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+
+
+  <div class="row">
+    {% for post in paginator.posts limit: 2 offset: 2 %}
+    <a href="{{ post.url }}">
+      <div class="col-sm-6">
+        <div data-mh="match2" class="col-md-12">
+        <img class="image" src="{{ site.baseurl }}/{{ post.cover }}">
+
+        <h1>{{ post.title }}</h1>
+        <h2> {{ post.author }} // {{ post.date | date: '%B %d, %Y' }}</h2>
+        <p>{{ post.excerpt }}</p>
+      </div>
         </div>
-    </div>
+    </a>
+    {% endfor %}
+  </div>
 
+
+
+
+  <div class="row">
+    {% for post in paginator.posts limit: 2 offset: 4 %}
+    <a href="{{ post.url }}">
+      <div class="col-sm-6">
+        <div data-mh="match3" class="col-md-12">
+
+        <img class="image" src="{{ site.baseurl }}/{{ post.cover }}">
+
+        <h1>{{ post.title }}</h1>
+        <h2> {{ post.author }} // {{ post.date | date: '%B %d, %Y' }}</h2>
+        <p>{{ post.excerpt }}</p>
+      </div>
+        </div>
+    </a>
+    {% endfor %}
+  </div>
+
+
+
+
+  <div class="row">
+    {% for post in paginator.posts limit: 2 offset: 6 %}
+    <a href="{{ post.url }}">
+      <div class="col-sm-6">
+        <div data-mh="match4" class="col-md-12">
+
+        <img class="image" src="{{ site.baseurl }}/{{ post.cover }}">
+
+        <h1>{{ post.title }}</h1>
+        <h2> {{ post.author }} // {{ post.date | date: '%B %d, %Y' }}</h2>
+        <p>{{ post.excerpt }}</p>
+      </div>
+        </div>
+    </a>
+    {% endfor %}
+  </div>
+
+
+
+  {% if paginator.total_pages > 1 %}
+    <ul class="pager">
+        {% if paginator.previous_page %}
+        <li class="previous">
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-chevron-left" aria-hidden="true"></i>Previous</a>
+        </li>
+        {% endif %}
+        {% if paginator.next_page %}
+        <li class="next">
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        </li>
+        {% endif %}
+    </ul>
+    {% endif %}
 </div>
-
-
-</body>
-

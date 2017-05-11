@@ -1,0 +1,46 @@
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/sass/wander.css">
+  <!-- Javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="{{ site.baseurl }}/assets/javascript/navbar.js"></script>
+  <script src="{{ site.baseurl }}/assets/javascript/jquery.matchHeight.js"> </script>
+</head>
+
+<body>
+
+
+{% include navbar.html %}
+
+
+<div class="header">
+  <div class="caption">
+    <h1>Wayfaring Worker</h1>
+    <!-- <h2>Travel Adventures & Destinations</h2> -->
+  </div>
+  </div>
+<div class="container">
+<div class="row">
+<div class="col-sm-9 content">
+{{ content }}
+</div>
+
+
+<div class="col-sm-3 sidebar">
+{% include sidebar.html %}
+</div>
+</div>
+
+</div>
+
+{% include footer.html %}
+<script type="text/javascript">
+$(function() {
+ $(".match1, .match2, .match3, .match4").matchHeight();
+});
+</script>
+</body>

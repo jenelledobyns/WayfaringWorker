@@ -24,6 +24,8 @@ gem 'jekyll-paginate-v2'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-paginate-v2"
+  # gem "jekyll-paginate-v2"
   gem "jekyll-feed", "~> 0.6"
+  gem "octopress-paginate"
+
 end

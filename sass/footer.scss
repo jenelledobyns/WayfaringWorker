@@ -1,6 +1,3 @@
----
----
-@import "bootstrap";
 
   $black: #4c4c4c;
   $button2-color: #8d8d8d;
@@ -12,9 +9,10 @@
   color: #fff !important;
   padding: 30px;
   overflow: hidden;
-}
+  margin-top: 100px;
 
-.footer h3 {
+
+h3 {
   font-face: "Roboto", sans-serif !important;
   font-size: 20pt;
   font-weight: 100;
@@ -36,6 +34,7 @@
 
 .search {
   text-align: right;
+}
 }
 
 

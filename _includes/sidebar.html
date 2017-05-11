@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="{{ site.baseurl }}/sass/sidebar.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/css/flag-icon.css">
+<script type="text/javascript" src="{{ site.baseurl }}/assets/javascript/instafeed.js"></script>
+
+<div class="sidebar">
+  <h1> Currently in:</h1>
+   <!-- <span class="flag-icon flag-icon-hk"> </span> -->
+<h2><span class="flag-icon flag-icon-hk"></span>
+Hong Kong </h2>
+
+<hr>
+
+
+<h1> Latest Vlog </h1>
+<iframe width="100%" src="https://www.youtube.com/embed/4sIEUmmTn0k" frameborder="0" allowfullscreen></iframe>
+
+<hr>
+
+
+<h1> About </h1>
+<img src= "{{ site.baseurl }}/assets/images/profile.jpg">
+<p> In this area, I'll introduce a short description about myself. Try not to be weird about it. Anyway, this will be a little bit about me. And how it connects to the blog and stuffs.
+</p>
+
+
+
+
+<hr>
+
+<h1> Instagram </h1>
+<div id="instafeed"></div>
+
+
+<hr>
+
+
+<h1> subscribe </h1>
+<p> Want more? Enter your email for updates on the lastest articles and stuff!
+</p>
+<p> sub bar here </p>
+<p> sub button here </p>
+
+
+</div>
+<script type="text/javascript">
+    var userFeed = new Instafeed({
+        get: 'user',
+        userId: '1254866241',
+        accessToken: '1254866241.1677ed0.cb10bba96bfb47028d6fec41a2f794e4',
+         template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+    });
+    userFeed.run();
+</script>

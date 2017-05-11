@@ -1,0 +1,72 @@
+---
+---
+
+@import "default";
+
+// SIDEBAR
+
+.sidebar {
+	text-align: center;
+	color: #c0c0c0;
+  font-family: "Martel", serif;
+  font-size: 15pt;
+  padding: 40px 10px 10px 10px;
+
+  a, a:active {
+    color: #b1b1b1;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #4391ab;
+  }
+
+	img {
+		max-width: 100%;
+	}
+
+
+h1 {
+	font-family: "Roboto", sans-serif;
+  font-size: 22pt;
+  text-transform: uppercase;
+  color: #8d8d8d;
+}
+
+h2 {
+  font-family: "Couture", sans-serif;
+  font-size: 14pt;
+  // line-height: 30pt;
+
+
+}
+
+.flag-icon {
+   vertical-align: middle;
+}
+
+p {
+  padding: 10px;
+}
+
+hr {
+ border: 0;
+ padding: 10px;
+
+&:after {
+  // font-family: 'PT Serif', serif;
+  // font-size: 50px;
+	// content: '§';
+	// display: inline-block;
+	// position: relative;
+	// // top: -14px;
+	// padding: 0px;
+	// background: #f0f0f0;
+	// color: #8c8b8b;
+	// -webkit-transform: rotate(70deg);
+	// -moz-transform: rotate(70deg);
+	// transform: rotate(70deg);
+  // // margin: 0;
+ }
+}
+}

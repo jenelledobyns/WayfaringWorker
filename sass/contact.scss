@@ -30,64 +30,51 @@
 
 // TEXT & PICTURE
 
-.col-sm-7 {
+.col-sm-5 {
   p {
     float: left;
     margin: 0 auto;
     font-family: $body-font;
-    font-size: 16pt;
-    color: black;
+    font-size: 14pt;
+    color: #575757;
     text-indent: 50px;
+    line-height: 24pt;
   }
-}
 
-.col-sm-5 {
-  .selfie {
+  .icons {
+    width: 70%;
     margin: 0 auto;
-    height: 100%;
-    width: 100%;
+    font-family: 'Couture', sans-serif;
+    font-size: 10pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 50px;
+
+    span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
   }
 }
 
 
-// CONTACT FORM 
+
+// CONTACT FORM
 
 .email-container {
-  width: 90%;
-  max-width: 1000px;
-  background: #eeeeee;
-  margin: auto;
-  border: solid 5px white;
-  outline: solid 5px #eeeeee;
-  margin-bottom: 40px;
-  margin-top: 30px;
-  &:hover {
-    outline: solid 5px #e2e2e2;
+
+  h4 {
+    color: #575757;
   }
 
-.email-full {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-}
+  // .inner {
+  //   padding-left: 10px !important;
+  // }
 
-h2 {
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-  font-weight: bold;
-}
-
-p {
-  margin: 20px;
-  font-family: $body-font;
-  font-weight: 100;
-  color: #777 !important;
-  font-size: 14pt;
-}
-
-.container-fluid {
-    margin: 30px 10px 20px 10px;
-  }
+.col-sm-6, .col-sm-12 {
+  padding: 0 10px 0 0 !important;
+  margin: 0;
 }
 
 .ajax-form {
@@ -96,9 +83,10 @@ p {
 
 .ajax-form input {
   padding: 20px;
-	border: 0;
-  background: #fff;
-  border: 3px solid #fff;
+  color: #575757;
+  background: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 3px;
   outline: none;
   -webkit-transition: all .25s ease-in-out;
   -moz-transition: all .25s ease-in-out;
@@ -106,31 +94,33 @@ p {
   transition: all .25s ease-in-out;
   height: 40px;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .ajax-form textarea {
 	padding: 20px;
-	border: 0;
-  background: #fff;
-  border: 3px solid #fff;
+  color: #575757;
+  background: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 3px;
   outline: none;
   -webkit-transition: all .25s ease-in-out;
   -moz-transition: all .25s ease-in-out;
   -o-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
   height: 200px;
-  width: 90%;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .ajax-form input:focus,
 .ajax-form textarea:focus {
-	border: 4px solid #e2e2e2;
-  color: #424651;
+	border: 1px solid #ccc;
+  background-color: #fff;
 }
 
-.error { 
-  border: 3px solid #ED1941 !important; 
+.error {
+  border: 3px solid #ED1941 !important;
 }
 
 .form-thank-you {
@@ -139,8 +129,8 @@ p {
   	text-align: center;
 }
 
-.form-thank-you h3 { 
-  padding-top: 15px; 
+.form-thank-you h3 {
+  padding-top: 15px;
 }
 
 @media (max-width: 577px) {
@@ -150,29 +140,33 @@ p {
   }
 }
 
-.container-fluid {
-    margin: 30px 10px 20px 10px;
-  }
 
 .start {
-  font-family: 'Couture', sans-serif !important;
+  font-family: 'COUTUREBold', sans-serif !important;
+  font-weight: 900;
   text-transform: uppercase;
   font-size: 16px;
-  padding: 11px 20px 11px 20px;
+  padding: 2px 20px 0 20px;
+  display: table-cell;
+  vertical-align: middle !important;
   border-radius: 0;
   text-align: center;
-  background: transparent !important;
-  color: #777 !important;
-  border: 4px solid #777;
+  background-color: #626262 !important;
+  color: white !important;
+  border: none;
   outline: none;
+   height: 40px;
   &:hover {
-    color: #626262 !important;
-    border: 4px solid #626262;
+    background-color: #515151 !important;
     outline: none;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
   &:focus {
-    color: #626262 !important;
-    border: 4px solid #626262;
+    color: #515151 !important;
+    border: none;
     outline: none;
       }
 }
@@ -184,5 +178,6 @@ p {
 }
 
 .name, .email {
- width: 90%; 
+ width: 90%;
+}
 }
