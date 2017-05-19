@@ -1,53 +1,21 @@
-<link rel="stylesheet" href="{{ site.baseurl }}/sass/sidebar.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/css/flag-icon.css">
-<script type="text/javascript" src="{{ site.baseurl }}/assets/javascript/instafeed.js"></script>
-
+<link rel="stylesheet" href="{{ site.baseurl }}/sass/worksidebar.css">
 <div class="sidebar">
-  <h1> Currently in:</h1>
-   <!-- <span class="flag-icon flag-icon-hk"> </span> -->
-<h2><span class="flag-icon flag-icon-hk"></span>
-Hong Kong </h2>
+  <h1> Region</h1>
 
-<hr>
-
-
-<h1> Latest Vlog </h1>
-<iframe height="215" src="https://www.youtube.com/embed/4sIEUmmTn0k" frameborder="0" allowfullscreen></iframe>
-
-<hr>
-
-
-<h1> About </h1>
-<img src= "{{ site.baseurl }}/assets/images/profile.jpg">
-<p> In this area, I'll introduce a short description about myself. Try not to be weird about it. Anyway, this will be a little bit about me. And how it connects to the blog and stuffs.
-</p>
-
-
-
-
-<hr>
-
-<h1> Instagram </h1>
-<div id="instafeed"></div>
+<h2> <a href="#">Europe</a> </h2>
+<h2> <a href="#">North America</a> </h2>
+<h2> South America </h2>
+<h2> Asia </h2>
+<h2> Australia </h2>
 
 
 <hr>
 
 
-<h1> subscribe </h1>
-<p> Want more? Enter your email for updates on the lastest articles and stuff!
-</p>
-<p> sub bar here </p>
-<p> sub button here </p>
-
-
+<h1> Title </h1>
+<h2> English Teaching </h2>
+<h2> National Park Jobs </h2>
+<h2> Scuba Diving Instructor </h2>
+<h2> Bartending </h2>
+<h2> Teach Online </h2>
 </div>
-<script type="text/javascript">
-    var userFeed = new Instafeed({
-        get: 'user',
-        userId: '1254866241',
-        accessToken: '1254866241.1677ed0.cb10bba96bfb47028d6fec41a2f794e4',
-         template: '<a href="{{link}}"><img src="{{image}}" /></a>'
-    });
-    userFeed.run();
-</script>
