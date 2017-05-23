@@ -5,11 +5,63 @@
 .footer {
   width: 100%;
   background-color: #282828;
-  height: 240px;
+  min-height: 240px;
   color: #fff !important;
-  padding: 30px;
+  padding: 10px 50px 10px 50px;
   overflow: hidden;
-  margin-top: 100px;
+  margin-top: 50px;
+
+  //Youtube
+
+  .videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+//Insta
+
+.instagram {
+  margin-top: -7px !important;
+  margin-left: -7px;
+}
+	.col-md-6 {
+		padding: 7px !important;
+	}
+
+
+
+#instafoot {
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+// copyright
+.copyright  {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0 15px 0 !important;
+  margin: 0 auto;
+}
+
+.copyright p {
+    font-size: 10pt;
+    font-family: 'Roboto', sans-serif !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #c6c6c6 !important;
+    margin: 0 !important;
+}
+
 
 
 h3 {
@@ -17,10 +69,11 @@ h3 {
   font-size: 20pt;
   font-weight: 100;
   text-transform: uppercase;
+  // text-align: center;
 }
 .fa {
   color: #fff;
-  padding-right: 15px;
+  padding-left: 15px;
   float: left;
 
   &:hover {
@@ -32,10 +85,10 @@ h3 {
   }
 }
 
-.search {
-  text-align: right;
+
 }
-}
+
+
 
 
 
@@ -51,7 +104,7 @@ h3 {
     border: 0;
     border-radius: 5px;
     overflow: auto;
-    float:right;
+    float:left;
 &:focus {
   background: #d2d2d2;
   outline: none;
@@ -60,38 +113,26 @@ h3 {
 }
 
 .footer button[type="submit"] {
-    right: 0;
     height: 36px;
     width: 100%;
     background: transparent;
     color: white;
     vertical-align: center;
-    text-align: right;
+    text-align: left;
     border: 0 !important;
     font-size: 22px;
-    padding-right: 10px;
+    padding-left: 10px;
     &:focus {
       color: #d2d2d2;
       outline: none;
     }
 
 }
-.copyright  {
-  text-align: center;
-  padding-top: 50px;
-  margin: auto;
 
-}
-
-.copyright p {
-    font-size: 10pt;
-    font-family: 'Martel', serif !important;
-    color: #c6c6c6 !important;
-}
 
 
 .row {
-  padding: 0px !important;
+  padding: 0px;
 }
 
 .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4 {

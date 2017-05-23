@@ -1,44 +1,99 @@
+<script src="{{ site.baseurl }}/assets/javascript/jquery.matchHeight.js"> </script>
+
+
+
 <div class="footer">
-  <div class="row top">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-3">
-      <h3>Follow</h3>
+  <div class="row">
+
+    <div class="col-xs-12 col-sm-2 instagram">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3>Instagram</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div data-mh="matchfoot" class="col-md-12">
+      <div id="instafoot" class="insta"></div>
     </div>
-    <div class="col-sm-4">
+      </div>
+      </div>
+
+
+    <div class="col-xs-12 col-sm-3 col-sm-offset-1">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3>Youtube</h3>
+        </div>
+      </div>
+      <div data-mh="matchfoot" class="videoWrapper youtube">
+      <iframe src="https://www.youtube.com/embed/4sIEUmmTn0k" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
-    <div class="col-sm-3 search">
-      <div class="col-sm-1"></div>
-      <h3>Search</h3>
-    </div>
-  </div>
 
 
 
-  <div class="row icons">
-<div class="col-sm-1"></div>
-    <div class="col-sm-4">
-    <a href="http://www.facebook.com/Wayfaring-Worker-899572923513508/"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
-    <a href="http://www.twitter.com/wayfaringworker"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
-    <a href="http://www.instagram.com/wayfaringworker/"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
-    <a href="http://www.youtube.com/users/wayfaringworker"><i class="fa fa-youtube fa-3x" aria-hidden="true"></i></a>
+
+
+  <div class="col-xs-12 col-sm-4 col-sm-offset-2">
+    <div class="row">
+      <div class="col-xs-12">
+        <h3>Search</h3>
+      </div>
     </div>
-    <div class="col-sm-2"> </div>
-    <div class="col-sm-1">
+    <div data-mh="matchfoot" class="row">
+
+
+
+    <div class="col-xs-10">
+      <form action="/search.html" method="get">
+        <input type="text" id="search_box" name="query" class="searchform">
+    </div>
+
+    <div class="col-xs-2">
       <button type="submit"  value="search" class="searchclk fa fa-search" aria-hidden="true"></button>
     </form>
   </div>
 
-    <div class="col-sm-3">
-      <form action="/search.html" method="get">
-        <input type="text" id="search_box" name="query" class="searchform">
-    </div>
-    <div class="col-sm-1">
 
-    </div>
-
-
-
-  </div>
-  <div class="copyright"><p> This website and its content are copyright © 2017 Wayfaring Worker
   </div>
 </div>
+</div>
+<div class="row copyright"><p> This website and its content are copyright © 2017 Wayfaring Worker</p>
+</div>
+</div>
+
+
+
+
+{% raw %}
+<script type="text/javascript">
+// Instafeed
+
+    var instasideFeed = new Instafeed({
+        target: 'instaside',
+        get: 'user',
+        userId: 2119921924,
+        accessToken: '2119921924.1677ed0.3fb302ea0aaf4054baf29563ddabb2ac',
+        limit: 4,
+        template: '<div class="col-xs-6 col-sm-6 col-md-6"><a href="{{link}}"><img src="{{image}}" /></a></div>',
+    });
+
+    var instafootFeed = new Instafeed({
+        target: 'instafoot',
+        get: 'user',
+        userId: 2119921924,
+        accessToken: '2119921924.1677ed0.3fb302ea0aaf4054baf29563ddabb2ac',
+        limit: 4,
+        template: '<div class="col-xs-6 col-sm-6 col-md-6"><a href="{{link}}"><img src="{{image}}" /></a></div>',
+    });
+    instasideFeed.run();
+    instafootFeed.run();
+
+// Match Height
+    $(function() {
+     $(".matchfoot").matchHeight();
+    });
+
+
+</script>
+{% endraw %}
