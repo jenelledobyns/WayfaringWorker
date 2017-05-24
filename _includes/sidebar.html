@@ -44,22 +44,43 @@ Hong Kong
 
 
 <h1> subscribe </h1>
-<p> Want more? Enter your email for updates on the lastest articles and stuff!
-</p>
-<p> sub bar here </p>
-<p> sub button here </p>
+
+  <div class="email-full">
+      <div class="form-container">
+        <form class="ajax-form" method="POST" action="http://formspree.io/fisherankney@gmail.com">
+          <div class="row">
+
+              <input type="text" class="email" name="email" placeholder="Your email address">
+
+          </div>
+            <div class="row">
+
+              <button type="submit" class="submit btn btn-primary btn-large start">Submit</button>
+
+          </div>
+          </div>
+        </div>
+      </form>
+    <div class="form-thank-you">
+      <h3>Thanks for Subscribing!</h3>
+    </div>
+  </div>
+
 
 
 </div>
-<!-- {% raw %}
+{% raw %}
 <script type="text/javascript">
-    var userFeed = new Instafeed({
+// Instafeed
+
+    var instasideFeed = new Instafeed({
+        target: 'instaside',
         get: 'user',
         userId: 2119921924,
         accessToken: '2119921924.1677ed0.3fb302ea0aaf4054baf29563ddabb2ac',
         limit: 4,
         template: '<div class="col-xs-6 col-sm-6 col-md-6"><a href="{{link}}"><img src="{{image}}" /></a></div>',
     });
-    userFeed.run();
-</script>
-{% endraw %} -->
+        instasideFeed.run();
+        </script>
+        {% endraw %}

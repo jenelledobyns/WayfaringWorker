@@ -8,8 +8,7 @@
   background: url('{{ site.baseurl }}/assets/images/3.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  height: calc(40vh + 100px);
-  margin-top: -100px;
+  height: 60vh;
   overflow: auto;
   display: flex;
   align-items: center;
@@ -30,6 +29,15 @@
 
 // TEXT & PICTURE
 
+h1 {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -2px;
+  font-size: 35pt;
+  text-transform: uppercase;
+  color: $black !important;
+  text-align: center;
+}
+
 .col-sm-5 {
   p {
     float: left;
@@ -39,6 +47,7 @@
     color: #575757;
     text-indent: 50px;
     line-height: 24pt;
+    padding: 5px;
   }
 
   .icons {
@@ -49,6 +58,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 50px;
+    padding: 10px;
 
     span {
   display: inline-block;

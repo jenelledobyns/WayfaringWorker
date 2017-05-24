@@ -7,24 +7,23 @@
 background: url('{{ site.baseurl }}/assets/images/2.jpg') no-repeat center center;
 -webkit-background-size: cover;
 -moz-background-size: cover;
-height: calc(40vh + 100px);
-margin-top: -100px;
+height: 60vh;
 overflow: auto;
 display: flex;
 align-items: center;
 justify-content: center;
 margin-bottom: 40px;
- h1 {
-    padding-top: 100px;
-    padding-bottom: 0px;
-    font-family: $title-font;
-    font-weight: bold;
-    font-size: 44pt;
-    color: white;
-    text-align: center;
-    line-height: 40pt;
-    text-align: center;
-  }
+
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -2px;
+  font-size: 35pt;
+  text-transform: uppercase;
+  color: $black !important;
+  text-align: center;
+
 }
 
 
@@ -58,31 +57,36 @@ margin: 0 auto;
 text-align: center;
 margin-top: 30px;
 margin-bottom: 30px;
+padding: 50px;
 }
 
 
   input[type="text"] {
-    font-size: 14pt;
-    font-family: $body-font;
-    width:500px;
-    height: 52px;
-    padding: 5px 8px 5px 8px;
-    background: $form-color;
-    border: 0;
-    border-radius: 8px;
-    overflow: auto;
-  &:focus {
-    background: #cecece;
+    padding: 20px;
+    color: #575757;
+    background: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 3px;
     outline: none;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    height: 40px;
+    margin-bottom: 20px;
+    width: 50%;
+  &:focus {
+    border: 1px solid #ccc;
+    background-color: #fff;
   }
   }
 
    button[type="submit"] {
       margin-left: 10px;
-      height: 36px;
-      width: 36px;
+      height: 30px;
+      width: 30px;
       background: transparent;
-      color: black;
+      color: #adadad;
       vertical-align: center;
       text-align: center;
       border: 0 !important;

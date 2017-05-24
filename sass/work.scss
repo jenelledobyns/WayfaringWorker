@@ -16,17 +16,15 @@ display: flex;
 align-items: center;
 justify-content: center;
 margin-bottom: 40px;
- h1 {
-    padding-top: 100px;
-    padding-bottom: 0px;
-    font-family: $title-font;
-    font-weight: bold;
-    font-size: 44pt;
-    color: white !important;
-    text-align: center;
-    line-height: 40pt;
-    text-align: center;
-  }
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25pt;
+  text-align: center;
+  letter-spacing: 2px;
+  color: white;
+  text-transform: uppercase;
+
+}
 }
 
 .col-sm-6 .col-sm-push-6 {
