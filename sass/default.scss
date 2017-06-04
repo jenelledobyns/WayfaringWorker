@@ -1,6 +1,40 @@
-
 // Website-wide defaults
 @import "bootstrap";
+@import "navbar";
+@import "footer";
+@import "font-awesome";
+
+@font-face {
+  font-family: Vendetta;
+  src: url('/assets/fonts/vendetta.otf');
+}
+
+@font-face {
+  font-family: Venetian;
+  src: url('/assets/fonts/venetian.otf');
+}
+
+@font-face {
+  font-family: Couture;
+  src: url('/assets/fonts/couture-bld.ttf');
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url('/assets/fonts/Roboto-Thin.ttf');
+}
+
+@font-face {
+  font-family: Martel;
+  src: url('/assets/fonts/Martel-Regular.ttf');
+}
+
+@font-face {
+  font-family: Bebas Neue;
+  src: url('/assets/fonts/BebasNeue.otf');
+}
+
+
 
 // Fonts
   $body-font: 'Martel', serif;

@@ -5,61 +5,95 @@
 
 
 // ARTICLE HEADER
+body {
+  background: rgb(230,230,230); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+  background-attachment: fixed;
+}
+.container-fluid {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px;
 
+}
+.container {
+	width: 95% !important;
+	max-width: 1280px;
+}
 
 .header {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  height: calc(100vh + 100px);
-  margin-top: -100px;
-  overflow: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 40px;
+	// margin: 0 auto;
+	// width: 100%;
+	// height: 60vh;
+	// background-position: center bottom;
+	// background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+.caption {
+	max-width: 60%;
+	text-align: center;
+	h1 {
+		font-family: "Vendetta", sans-serif;
+		font-size: 65pt;
+		text-align: center;
+		letter-spacing: -2px;
+		color: white;
+		line-height: 70pt;
+
+	}
+	h2 {
+		font-family: "Roboto", serif;
+		text-transform: uppercase;
+		font-size: 16pt;
+		color: white;
+	}
 }
 
-.logo {
-  margin-top: 100px;
-  img {
-    width: 200px;
-    height: auto;
-  }
 }
+
 
 .title {
   font-family: $title-font;
   font-weight: 100;
   color: $black !important;
   line-height: -20px ;
-  font-size: 52px;
+  font-size: 38pt;
   text-transform: uppercase;
   text-align: center;
   margin-top: 20px;
 }
 
 .author-date {
-  font-family: $body-font;
-  font-weight: 100;
-  color: $black !important;
-  line-height: -20px;
-  font-size: 26px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+  color: $black;
+  line-height: -10px;
+  font-size: 16pt;
   text-align: center;
-  padding-top: 0px;
-  margin-top: 15px;
+  margin-top: -10px;
 }
 
 
-// BLOG CONTENT 
+// BLOG CONTENT
 
+.col-sm-9 {
+	padding: 0 !important;
+}
 
 .blog-content {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
-  font-family: $body-font;
-  font-size: 16pt;
-  color: black;
-  padding-top:20px;
+  font-family: 'Avenir', sans-serif;
+  color: $black;
+  font-size: 18pt;
+  line-height: 26pt;
+  padding-top: 20px;
   text-indent: 50px;
 }
 
@@ -75,15 +109,15 @@
 }
 
 h1 {
-  font-family: $title2-font !important;
+  font-family: $title2-font;
   font-size: 30pt;
-  color: $black !important;
+  color: $black;
   text-align: center;
 }
 
 p {
-  font-family: 'Myriad Pro', sans-serif;
-  color: #262626;
+  font-family: 'Avenir', sans-serif;
+  color: $black;
   font-size: 20px;
 }
 
@@ -91,41 +125,24 @@ p {
 // RELATED
 
 
-.related{
-  width: 100%;
+.related {
+  width: 80%;
   margin: 0 auto;
+  padding: 30px;
+
   h1 {
-    font-family: $title-font !important;
+    font-family: $title-font;
     text-align:center;
-    font-size: 36pt !important;
-    text-transform:uppercase !important;
+    font-size: 32pt !important;
+    text-transform: uppercase !important;
     color: $black !important;
     padding-bottom: 20px;
-  }
-  h2 {
-    font-family: $title-font !important;
-    font-weight: 100;
-    text-align:center;
-    font-size: 28pt !important;
-    text-transform:uppercase !important;
-    margin-bottom: -10px;
-    color: $black !important;
+
   a, a:active, a:visited {
     color: $black !important;
     text-decoration: none;
     }
-  }
-  h3 {
-    font-family: $body-font;
-    font-weight: 100;
-    color: $black !important;
-    line-height: -20px;
-    font-size: 18pt;
-    text-align: center;
-    padding-top: 0px;
-    margin-top: 15px;
-    margin-bottom: 40px;
-  }
+
 }
 
 .rel-img {
@@ -137,6 +154,7 @@ p {
     width: 100%;
     height: 100%;
   }
+}
 }
 
 a:-webkit-any-link {

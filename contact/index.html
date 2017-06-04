@@ -1,63 +1,98 @@
 ---
-layout: page
+layout: contact
 ---
-<head>
-  <link rel="stylesheet" href="{{ site.baseurl }}/sass/contact.css">
-</head>
-
-<body>
 
 <div class="header">
-  <h1> Contact Me </h1>
 </div>
 
   <div class="container">
     <div class="row">
-      
-      <div class="col-sm-7">
+      <div class="col-sm-5">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1>Contact</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ed  do eiusmod tempor incididunt
            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-           velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-           sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-           adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+           velit esse cillum dolore eu fugiat nulla pariatur.
         </p>
       </div>
-     
-     <div class="col-sm-5">
-       <img class="selfie" src="{{ site.baseurl }}/assets/images/1.jpg">
-     </div>
-    
     </div>
-  </div>
-
-<div class="email-container">
-  <div class="email-full">
-   
-    <h2>Send Me a Message!</h2>
-    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-      
-      <form class="ajax-form" method="POST" action="http://formspree.io/fisherankney@gmail.com">
-        <div class="container-fluid">
+    <div class="row">
+        <div class="container icons">
           <div class="row">
-            <div class="col-sm-9">
-              <input type="text" class="name" name="name" placeholder="Your name">
-              <input type="text" class="email" name="email" placeholder="Your email address">
-              <textarea class="message" name="message" placeholder="your message"></textarea>
+            <div class="col-sm-2">
+              <i class="fa fa-3x fa-envelope-o" aria-hidden="true"></i>
+
             </div>
-            <div class="col-sm-3">
-              <button type="submit" class="submit btn btn-primary btn-large start">Submit</button>
+            <div class="col-sm-10">
+              <span>fisherankney@gmail.com</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-2">
+              <i class="fa fa-3x fa-youtube-play" aria-hidden="true"></i>
+            </div>
+            <div class="col-sm-10">
+              <span>youtube.com/wayfaringworker</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-2">
+              <i class="fa fa-3x fa-instagram" aria-hidden="true"></i>
+            </div>
+            <div class="col-sm-10">
+              <span>@wayfaringworker</span>
+
             </div>
           </div>
         </div>
+          </div>
+        </div>
+
+<div class="col-sm-6 col-sm-offset-1">
+
+<div class="email-container">
+      <form class="ajax-form" method="POST" action="http://formspree.io/fisherankney@gmail.com">
+        <div class="container-fluid">
+          <div class="row">
+            <h4 class="inner">Name*</h4>
+            <div class="col-sm-6">
+              <input type="text" class="name" name="name" placeholder="First">
+            </div>
+            <div class="col-sm-6">
+              <input type="text" class="name" name="name" placeholder="Last">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <h4>Email*</h4>
+              <input type="text" class="email" name="email">
+            </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <h4>Message*</h4>
+
+              <textarea class="message" name="message"></textarea>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-sm-12">
+              <button type="submit" class="submit btn btn-primary btn-large start">Submit</button>
+            </div>
+          </div>
+          </div>
+
       </form>
-    
+
+
+
     <div class="form-thank-you">
-      <h3>Thanks for Subscribing!</h3>
+      <h3>Your message has been sent. Thank you!</h3>
     </div>
-  
+
   </div>
 </div>
-
-
-</body>
+</div>
+</div>

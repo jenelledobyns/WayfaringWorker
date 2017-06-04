@@ -1,0 +1,63 @@
+---
+---
+
+@import "default";
+
+// SIDEBAR
+
+.sidebar {
+	text-align: center;
+	color: #c0c0c0;
+  font-family: "Martel", serif;
+  font-size: 15pt;
+  padding: 40px 10px 10px 10px;
+
+  a, a:active {
+    color: #b1b1b1;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $black;
+  }
+
+	img {
+		max-width: 100%;
+	}
+
+
+h1 {
+	font-family: "Roboto", sans-serif;
+  font-size: 24pt;
+  text-transform: uppercase;
+	letter-spacing: 2px;
+  color: $black;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18pt;
+  line-height: 25pt;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: #8d8d8d;
+
+}
+
+
+
+.flag-icon {
+   vertical-align: middle;
+}
+
+p {
+  padding: 10px;
+}
+
+hr {
+ border: 0;
+ padding: 10px;
+
+}
+}
