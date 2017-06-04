@@ -8,8 +8,7 @@
   background: url('{{ site.baseurl }}/assets/images/7.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  height: calc(40vh + 100px);
-  margin-top: -100px;
+  height: 60vh;
   overflow: auto;
   display: flex;
   align-items: center;
@@ -32,6 +31,7 @@
 
 .container {
   margin: 0 auto;
+  width: 80%;
   h1 {
     font-family: $title-font;
     font-weight: bold;
@@ -43,6 +43,7 @@
     padding-bottom: 35px;
     margin: auto;
     text-align: center;
+
   }
   h2 {
     font-family: $title-font;
@@ -55,9 +56,10 @@
   }
   p {
     font-size: 16pt;
-    font-family:$body-font;
+    font-family: 'Avenir', sans-serif;
     margin: 0 auto;
     padding-bottom: 15px;
+    line-height: 26pt;
     .italic {
       font-style: italic;
     }
@@ -65,7 +67,7 @@
 
   .important {
     font-size: 18pt;
-    font-family:$body-font;
+    font-family: 'Avenir', sans-serif;
     margin: 0 auto;
     font-style: italic;
     text-align: center;
@@ -73,7 +75,7 @@
 
   .link-list {
     font-size: 16pt;
-    font-family:$body-font;
+    font-family: 'Avenir', sans-serif;
     margin: 0 auto;
     padding-bottom: 15px;
   }
@@ -87,13 +89,12 @@
 }
 
 
-// IMAGES 
+// IMAGES
 
 .image-template {
   width: 90%;
   margin: auto;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px;
 }
 
 img {
@@ -104,19 +105,14 @@ img {
 // SUBSCRIBE SECTION
 
 .email-container {
-  width: 90%;
-  max-width: 1000px;
-  background: #eeeeee;
+  width: 100%;
+  background: #fff;
   margin: auto;
-  border: solid 5px white;
-  outline: solid 5px #eeeeee;
   margin-bottom: 40px;
-  &:hover {
-    outline: solid 5px #e2e2e2;
-  }
+
 
 .email-full {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   padding: 20px;
 }
@@ -125,38 +121,47 @@ h2 {
   font-family: "Roboto", sans-serif;
   text-align: center;
   font-weight: bold;
+  font-size: 34px;
 }
 
 p {
   margin: 20px;
-  font-family: $body-font;
+  font-family: 'Avenir', sans-serif;
   font-weight: 100;
   color: #777 !important;
   font-size: 14pt;
+  line-height: 24pt;
 }
 
 .start {
-  font-family: 'Couture', sans-serif !important;
+  font-family: 'COUTUREBold', sans-serif !important;
+  font-weight: 900;
   text-transform: uppercase;
   font-size: 16px;
-  padding: 11px 20px 11px 20px;
+  padding: 2px 20px 0 20px;
+  display: table-cell;
+  vertical-align: middle !important;
   border-radius: 0;
   text-align: center;
-  background: transparent !important;
-  color: #777 !important;
-  border: 4px solid #777;
+  background-color: #626262 !important;
+  color: white !important;
+  border: none;
   outline: none;
-   height: 46px;
+  height: 40px;
+
   &:hover {
-    color: #626262 !important;
-    border: 4px solid #626262;
+    background-color: #515151 !important;
     outline: none;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
   &:focus {
-    color: #626262 !important;
-    border: 4px solid #626262;
+    color: #515151 !important;
+    border: none;
     outline: none;
-  }
+      }
 }
 
 button,  input,  textarea {
@@ -172,23 +177,25 @@ button,  input,  textarea {
 }
 
 .ajax-form { width: 100%; }
-.ajax-form input,
-.ajax-form textarea {
-	padding: 20px;
-	border: 0;
-  background: #fff;
-  border: 3px solid #fff;
+.ajax-form input {
+  padding: 20px;
+  color: #575757;
+  background: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 3px;
   outline: none;
   -webkit-transition: all .25s ease-in-out;
   -moz-transition: all .25s ease-in-out;
   -o-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
   height: 40px;
+  margin-bottom: 20px;
+  width: 100%;
 }
 .ajax-form input:focus,
 .ajax-form textarea:focus {
-	border: 4px solid #e2e2e2;
-  color: #424651;
+  border: 1px solid #ccc;
+  background-color: #fff;
 }
 
 .error { border: 3px solid #ED1941 !important; }
