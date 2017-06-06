@@ -44,7 +44,6 @@ gems:
   - jekyll-feed
   - jekyll-bootstrap-sass
   - octopress-paginate
+  - kramdown
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']

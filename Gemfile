@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby RUBY_VERSION
+ruby "2.4.1"
 
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
@@ -16,6 +16,10 @@ gem "minima", "~> 2.0"
 gem 'jekyll-bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'jekyll-paginate-v2'
+gem 'kramdown'
+gem 'rack-jekyll'
+gem 'rake'
+gem 'puma'
 
 
 
