@@ -1,14 +1,19 @@
 ---
 ---
 @import "default";
-
+ 
 // HEADER
 
 .header {
-  background: url('{{ site.baseurl }}/assets/images/7.jpg') no-repeat center center;
+  background: url('{{ site.baseurl }}/assets/images/sweden-146.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   height: 60vh;
+<<<<<<< Updated upstream
+=======
+//  margin-top: -100px;
+  margin-bottom: 40px;
+>>>>>>> Stashed changes
   overflow: auto;
   display: flex;
   align-items: center;
