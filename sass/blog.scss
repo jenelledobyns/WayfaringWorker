@@ -86,6 +86,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', end
 	padding: 0 !important;
 }
 
+  h2 {
+    font-family: "Roboto", serif;
+    text-transform: uppercase;
+    font-size: 16pt;
+    width: 90%;
+    margin: 0 auto;
+    padding-top:20px;
+  }
+
 .blog-content {
   width: 90%;
   margin: 0 auto;
@@ -95,6 +104,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', end
   line-height: 26pt;
   padding-top: 20px;
   text-indent: 50px;
+}
+
+.important {
+  font-size: 18pt;
+  font-family: 'Avenir', sans-serif;
+  margin: 0 auto;
+  font-style: italic;
+  text-align: center;
+  padding-top:20px;
+  width:90%;
 }
 
 .image-template {
