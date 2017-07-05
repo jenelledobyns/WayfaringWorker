@@ -15,7 +15,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', end
 
 // HEADER STYLES
 .header {
-background: url('{{ site.baseurl }}/assets/images/titleimg.jpg') no-repeat center center;
+background: url('{{ site.baseurl }}/assets/images/home_header.jpg') no-repeat center center;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 height: calc(100vh + 100px);
@@ -410,8 +410,8 @@ margin: 0 auto;
     letter-spacing: -1px;
     font-weight: 100;
     color: $black;
-    font-size: 28pt;
-    line-height: 29px;
+    // font-size: 28pt;
+    // line-height: 29px;
     }
   h3 {
     font-family: 'Roboto', sans-serif;

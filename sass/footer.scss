@@ -7,24 +7,26 @@
   background-color: #282828;
   min-height: 240px;
   color: #fff !important;
-  padding: 10px 50px 10px 50px;
   overflow: hidden;
   margin-top: 50px;
 
-  //Youtube
+h4 {
+  font-size: 60pt;
+  font-family: 'Venetian', sans-serif;
+  color: white !important;
+  padding-top: 20px;
+  text-transform: none !important;
 
-  .videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
 }
-.videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+
+  .wrapper {
+    padding: 30px 80px 30px 80px;
+  }
+
+  //Left
+
+.col-xs-12, .col-sm-6 {
+  height: 100%;
 }
 
 //Insta
@@ -32,8 +34,9 @@
 .instagram {
   margin-top: -7px !important;
   margin-left: -7px;
+  padding-top: 20px !important;
 }
-	.col-md-6 {
+	.col-md-4 {
 		padding: 7px !important;
 	}
 
@@ -45,12 +48,25 @@
 		height: 100%;
 	}
 }
+
+// Search
+
+.search {
+padding: 50px 50px 50px 0px;
+text-align: left;
+
+}
+
+.col-xs-10 {
+  padding-left: 0px !important;
+}
 // copyright
 .copyright  {
   width: 100%;
   text-align: center;
-  padding: 30px 0 15px 0 !important;
+  padding: 15px 80px 15px 70px !important;
   margin: 0 auto;
+  background: #232323;
 }
 
 .copyright p {
@@ -97,16 +113,16 @@ h3 {
 .footer input[type="text"] {
     width: 100%;
     height: 36px;
-    padding: 5px 30px 5px 8px;
+    // padding: 5px 30px 5px 8px;
     font-size: 12pt;
-    background: #fff;
+    background: #d2d2d2;
     color: $black;
     border: 0;
     border-radius: 5px;
     overflow: auto;
     float:left;
 &:focus {
-  background: #d2d2d2;
+  background: #fff;
   outline: none;
 }
 
@@ -116,12 +132,12 @@ h3 {
     height: 36px;
     width: 100%;
     background: transparent;
-    color: white;
+    color: #d2d2d2;
     vertical-align: center;
     text-align: left;
     border: 0 !important;
     font-size: 22px;
-    padding-left: 10px;
+    padding-left: 0px;
     &:focus {
       color: #d2d2d2;
       outline: none;
@@ -131,9 +147,6 @@ h3 {
 
 
 
-.row {
-  padding: 0px;
-}
 
 .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4 {
   padding: 0 !important;
