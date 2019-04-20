@@ -15,7 +15,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', end
 
 // HEADER STYLES
 .header {
-background: url('{{ site.baseurl }}/assets/images/home_header.jpg') no-repeat center center;
+  
+background-image: linear-gradient(rgba(0,0,0,0.5), url('{{ site.baseurl }}/assets/images/home_header.jpg') no-repeat center center);
+
 -webkit-background-size: cover;
 -moz-background-size: cover;
 height: calc(100vh + 100px);
