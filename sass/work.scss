@@ -40,6 +40,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', end
   display: flex;
   align-items: center;
   justify-content: center;
+  img {
+		max-width: 600px;
+	}
 .caption {
   max-width: 60%;
   text-align: center;

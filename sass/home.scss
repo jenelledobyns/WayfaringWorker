@@ -54,7 +54,7 @@ justify-content: center;
   }
 
   h3 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'CodeBold', sans-serif;
     font-size: 30px;
     opacity: 0.8;
     letter-spacing: 2px;
@@ -70,10 +70,10 @@ justify-content: center;
 
 
 .getstarted {
-  font-family: 'Couture', sans-serif !important;
+  font-family: 'CodeBold', sans-serif !important;
   font-weight: 900;
   text-transform: uppercase;
-  // letter-spacing: 1px;
+  letter-spacing: 2px;
   font-size: 16px;
   line-height: 5px;
   padding: 4px 20px 0 20px;
@@ -110,7 +110,7 @@ justify-content: center;
 
 
   .start {
-    font-family: 'COUTUREBold', sans-serif !important;
+    font-family: 'CodeBold', sans-serif !important;
     font-weight: 900;
     text-transform: uppercase;
     font-size: 16px;
@@ -156,8 +156,8 @@ justify-content: center;
 // H1 MAIN PAGE
 
 h1 {
-  font-family: "Roboto", sans-serif;
-  letter-spacing: -2px;
+  font-family: "CodeLight", sans-serif;
+  letter-spacing: 0px;
   font-size: 35pt;
   text-transform: uppercase;
   color: $black !important;
@@ -227,7 +227,7 @@ h1 {
       padding: 0;
       margin: 0;
       color: #fff !important;
-      font-family: 'Couture', sans-serif;
+      font-family: 'CodeLight', sans-serif;
       letter-spacing: 0px;
       font-weight: 900;
       font-size: 24pt;
@@ -278,7 +278,7 @@ margin: 0 auto;
 
 
     h4 {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'CodeLight', sans-serif;
       text-transform: uppercase;
       letter-spacing: 1px;
       color: $body-color;
@@ -413,7 +413,7 @@ margin: 0 auto;
   padding: 4px;
 
   h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'CodeLight', sans-serif;
     text-transform: uppercase;
     letter-spacing: -1px;
     font-weight: 100;
@@ -422,7 +422,7 @@ margin: 0 auto;
     // line-height: 29px;
     }
   h3 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'CodeBold', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 600;
@@ -577,7 +577,7 @@ textarea {
 
 
   h2 {
-    font-family: "Roboto", sans-serif;
+    font-family: "CodeBold", sans-serif;
     text-align: center;
     font-weight: bold;
 

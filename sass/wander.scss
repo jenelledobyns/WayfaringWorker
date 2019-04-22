@@ -34,12 +34,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', end
 	margin: 0 auto;
 	width: 100%;
 	height: 60vh;
-	background: url("{{ site.baseurl }}/assets/images/wander_header.jpg") no-repeat;
+	background: url("{{ site.baseurl }}/assets/images/wanderbg.jpg") no-repeat;
 	background-position: center bottom;
 	background-size: cover;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	img {
+		max-width: 600px;
+	}
 .caption {
 	max-width: 60%;
 	text-align: center;

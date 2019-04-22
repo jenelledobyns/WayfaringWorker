@@ -5,13 +5,13 @@
 @import "font-awesome";
 
 @font-face {
-  font-family: SurfingCapital;
-  src: url('/assets/fonts/SurfingCapital.ttf');
+  font-family: CodeBold;
+  src: url('/assets/fonts/CodeBold.otf');
 }
 
 @font-face {
-  font-family: Venetian;
-  src: url('/assets/fonts/venetian.woff');
+  font-family: CodeLight;
+  src: url('/assets/fonts/CodeLight.otf');
 }
 
 @font-face {
@@ -39,7 +39,7 @@
 // Fonts
   $body-font: 'Martel', serif;
   $title-font: 'Roboto', sans-serif;
-  $title2-font: 'Couture', sans-serif;
+  $title2-font: 'CodeBold', sans-serif;
 
 // Colors
   $body-color: #959595;
